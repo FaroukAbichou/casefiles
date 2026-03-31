@@ -15,24 +15,78 @@
   "caseType": "EdTech App",
   "role": "Product Designer",
   "tools": [
-    { "icon": "illustrator", "alt": "Adobe Illustrator" },
-    { "icon": "photoshop", "alt": "Adobe Photoshop" },
-    { "icon": "aftereffects", "alt": "After Effects" },
-    { "icon": "figma", "alt": "Figma" },
-    { "icon": "canva", "alt": "Canva" },
-    { "icon": "blender", "alt": "Blender" },
-    { "icon": "unity", "alt": "Unity" },
-    { "icon": "flutter", "alt": "Flutter" },
-    { "icon": "dart", "alt": "Dart" },
-    { "icon": "android", "alt": "Android" },
-    { "icon": "swift", "alt": "Swift" },
-    { "icon": "kotlin", "alt": "Kotlin" },
-    { "icon": "xcode", "alt": "Xcode" },
-    { "icon": "firebase", "alt": "Firebase" },
-    { "icon": "react", "alt": "React" },
-    { "icon": "typescript", "alt": "TypeScript" },
-    { "icon": "vite", "alt": "Vite" },
-    { "icon": "jest", "alt": "Jest" }
+    {
+      "icon": "illustrator",
+      "alt": "Adobe Illustrator"
+    },
+    {
+      "icon": "photoshop",
+      "alt": "Adobe Photoshop"
+    },
+    {
+      "icon": "aftereffects",
+      "alt": "After Effects"
+    },
+    {
+      "icon": "figma",
+      "alt": "Figma"
+    },
+    {
+      "icon": "canva",
+      "alt": "Canva"
+    },
+    {
+      "icon": "blender",
+      "alt": "Blender"
+    },
+    {
+      "icon": "unity",
+      "alt": "Unity"
+    },
+    {
+      "icon": "flutter",
+      "alt": "Flutter"
+    },
+    {
+      "icon": "dart",
+      "alt": "Dart"
+    },
+    {
+      "icon": "android",
+      "alt": "Android"
+    },
+    {
+      "icon": "swift",
+      "alt": "Swift"
+    },
+    {
+      "icon": "kotlin",
+      "alt": "Kotlin"
+    },
+    {
+      "icon": "xcode",
+      "alt": "Xcode"
+    },
+    {
+      "icon": "firebase",
+      "alt": "Firebase"
+    },
+    {
+      "icon": "react",
+      "alt": "React"
+    },
+    {
+      "icon": "typescript",
+      "alt": "TypeScript"
+    },
+    {
+      "icon": "vite",
+      "alt": "Vite"
+    },
+    {
+      "icon": "jest",
+      "alt": "Jest"
+    }
   ],
   "caseStudy": [
     {
@@ -60,5 +114,11 @@
       "type": "text",
       "content": "The app features adaptive learning algorithms, progress tracking for parents, multiplayer educational games, and a comprehensive curriculum covering math, science, language arts, and social studies. Over 50,000 students have improved their academic performance using TakiKids."
     }
+  ],
+  "relatedProjects": [
+    "tamdone",
+    "kotteb",
+    "healu",
+    "ecoquest"
   ]
 }

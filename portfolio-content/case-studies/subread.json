@@ -15,24 +15,78 @@
   "caseType": "Concept Case Study",
   "role": "Product Designer",
   "tools": [
-    { "icon": "figma", "alt": "Figma" },
-    { "icon": "notion", "alt": "Notion" },
-    { "icon": "readwise", "alt": "Readwise" },
-    { "icon": "rss", "alt": "RSS" },
-    { "icon": "substack", "alt": "Substack" },
-    { "icon": "ghost", "alt": "Ghost" },
-    { "icon": "medium", "alt": "Medium" },
-    { "icon": "contentful", "alt": "Contentful" },
-    { "icon": "sanity", "alt": "Sanity" },
-    { "icon": "vite", "alt": "Vite" },
-    { "icon": "typescript", "alt": "TypeScript" },
-    { "icon": "react", "alt": "React" },
-    { "icon": "nextjs", "alt": "Next.js" },
-    { "icon": "tailwindcss", "alt": "Tailwind CSS" },
-    { "icon": "vercel", "alt": "Vercel" },
-    { "icon": "cloudflare", "alt": "Cloudflare" },
-    { "icon": "eslint", "alt": "ESLint" },
-    { "icon": "playwright", "alt": "Playwright" }
+    {
+      "icon": "figma",
+      "alt": "Figma"
+    },
+    {
+      "icon": "notion",
+      "alt": "Notion"
+    },
+    {
+      "icon": "readwise",
+      "alt": "Readwise"
+    },
+    {
+      "icon": "rss",
+      "alt": "RSS"
+    },
+    {
+      "icon": "substack",
+      "alt": "Substack"
+    },
+    {
+      "icon": "ghost",
+      "alt": "Ghost"
+    },
+    {
+      "icon": "medium",
+      "alt": "Medium"
+    },
+    {
+      "icon": "contentful",
+      "alt": "Contentful"
+    },
+    {
+      "icon": "sanity",
+      "alt": "Sanity"
+    },
+    {
+      "icon": "vite",
+      "alt": "Vite"
+    },
+    {
+      "icon": "typescript",
+      "alt": "TypeScript"
+    },
+    {
+      "icon": "react",
+      "alt": "React"
+    },
+    {
+      "icon": "nextjs",
+      "alt": "Next.js"
+    },
+    {
+      "icon": "tailwindcss",
+      "alt": "Tailwind CSS"
+    },
+    {
+      "icon": "vercel",
+      "alt": "Vercel"
+    },
+    {
+      "icon": "cloudflare",
+      "alt": "Cloudflare"
+    },
+    {
+      "icon": "eslint",
+      "alt": "ESLint"
+    },
+    {
+      "icon": "playwright",
+      "alt": "Playwright"
+    }
   ],
   "sections": [
     {
@@ -121,6 +175,11 @@
         }
       ]
     }
+  ],
+  "relatedProjects": [
+    "financeflow",
+    "ecoquest",
+    "healu",
+    "tamdone"
   ]
 }
-

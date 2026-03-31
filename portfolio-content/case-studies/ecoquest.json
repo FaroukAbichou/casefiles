@@ -15,26 +15,86 @@
   "caseType": "Mobile App Redesign",
   "role": "Lead Product Designer",
   "tools": [
-    { "icon": "figma", "alt": "Figma" },
-    { "icon": "penpot", "alt": "Penpot" },
-    { "icon": "notion", "alt": "Notion" },
-    { "icon": "miro", "alt": "Miro" },
-    { "icon": "mapbox", "alt": "Mapbox" },
-    { "icon": "slack", "alt": "Slack" },
-    { "icon": "linear", "alt": "Linear" },
-    { "icon": "typescript", "alt": "TypeScript" },
-    { "icon": "react", "alt": "React" },
-    { "icon": "nextjs", "alt": "Next.js" },
-    { "icon": "graphql", "alt": "GraphQL" },
-    { "icon": "prisma", "alt": "Prisma" },
-    { "icon": "postgres", "alt": "PostgreSQL" },
-    { "icon": "terraform", "alt": "Terraform" },
-    { "icon": "aws", "alt": "AWS" },
-    { "icon": "docker", "alt": "Docker" },
-    { "icon": "kubernetes", "alt": "Kubernetes" },
-    { "icon": "databricks", "alt": "Databricks" },
-    { "icon": "snowflake", "alt": "Snowflake" },
-    { "icon": "grafana", "alt": "Grafana" }
+    {
+      "icon": "figma",
+      "alt": "Figma"
+    },
+    {
+      "icon": "penpot",
+      "alt": "Penpot"
+    },
+    {
+      "icon": "notion",
+      "alt": "Notion"
+    },
+    {
+      "icon": "miro",
+      "alt": "Miro"
+    },
+    {
+      "icon": "mapbox",
+      "alt": "Mapbox"
+    },
+    {
+      "icon": "slack",
+      "alt": "Slack"
+    },
+    {
+      "icon": "linear",
+      "alt": "Linear"
+    },
+    {
+      "icon": "typescript",
+      "alt": "TypeScript"
+    },
+    {
+      "icon": "react",
+      "alt": "React"
+    },
+    {
+      "icon": "nextjs",
+      "alt": "Next.js"
+    },
+    {
+      "icon": "graphql",
+      "alt": "GraphQL"
+    },
+    {
+      "icon": "prisma",
+      "alt": "Prisma"
+    },
+    {
+      "icon": "postgres",
+      "alt": "PostgreSQL"
+    },
+    {
+      "icon": "terraform",
+      "alt": "Terraform"
+    },
+    {
+      "icon": "aws",
+      "alt": "AWS"
+    },
+    {
+      "icon": "docker",
+      "alt": "Docker"
+    },
+    {
+      "icon": "kubernetes",
+      "alt": "Kubernetes"
+    },
+    {
+      "icon": "databricks",
+      "alt": "Databricks"
+    },
+    {
+      "icon": "snowflake",
+      "alt": "Snowflake"
+    },
+    {
+      "icon": "grafana",
+      "alt": "Grafana"
+    }
   ],
   "caseStudy": [
     {
@@ -62,5 +122,10 @@
       "type": "text",
       "content": "Key features include carbon footprint tracking, sustainable product recommendations, community challenges, environmental education content, and integration with local sustainability initiatives. The app has helped users reduce their carbon footprint by an average of 35%."
     }
+  ],
+  "relatedProjects": [
+    "financeflow",
+    "blinkdo",
+    "subread"
   ]
 }

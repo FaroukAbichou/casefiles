@@ -15,26 +15,86 @@
   "caseType": "Fintech Product",
   "role": "Product Designer",
   "tools": [
-    { "icon": "figma", "alt": "Figma" },
-    { "icon": "xd", "alt": "Adobe XD" },
-    { "icon": "miro", "alt": "Miro" },
-    { "icon": "stripe", "alt": "Stripe" },
-    { "icon": "plaid", "alt": "Plaid" },
-    { "icon": "excel", "alt": "Excel" },
-    { "icon": "google-sheets", "alt": "Google Sheets" },
-    { "icon": "tableau", "alt": "Tableau" },
-    { "icon": "powerbi", "alt": "Power BI" },
-    { "icon": "typescript", "alt": "TypeScript" },
-    { "icon": "react", "alt": "React" },
-    { "icon": "nextjs", "alt": "Next.js" },
-    { "icon": "nestjs", "alt": "NestJS" },
-    { "icon": "postgres", "alt": "PostgreSQL" },
-    { "icon": "redis", "alt": "Redis" },
-    { "icon": "graphql", "alt": "GraphQL" },
-    { "icon": "datadog", "alt": "Datadog" },
-    { "icon": "sentry", "alt": "Sentry" },
-    { "icon": "jest", "alt": "Jest" },
-    { "icon": "webpack", "alt": "Webpack" }
+    {
+      "icon": "figma",
+      "alt": "Figma"
+    },
+    {
+      "icon": "xd",
+      "alt": "Adobe XD"
+    },
+    {
+      "icon": "miro",
+      "alt": "Miro"
+    },
+    {
+      "icon": "stripe",
+      "alt": "Stripe"
+    },
+    {
+      "icon": "plaid",
+      "alt": "Plaid"
+    },
+    {
+      "icon": "excel",
+      "alt": "Excel"
+    },
+    {
+      "icon": "google-sheets",
+      "alt": "Google Sheets"
+    },
+    {
+      "icon": "tableau",
+      "alt": "Tableau"
+    },
+    {
+      "icon": "powerbi",
+      "alt": "Power BI"
+    },
+    {
+      "icon": "typescript",
+      "alt": "TypeScript"
+    },
+    {
+      "icon": "react",
+      "alt": "React"
+    },
+    {
+      "icon": "nextjs",
+      "alt": "Next.js"
+    },
+    {
+      "icon": "nestjs",
+      "alt": "NestJS"
+    },
+    {
+      "icon": "postgres",
+      "alt": "PostgreSQL"
+    },
+    {
+      "icon": "redis",
+      "alt": "Redis"
+    },
+    {
+      "icon": "graphql",
+      "alt": "GraphQL"
+    },
+    {
+      "icon": "datadog",
+      "alt": "Datadog"
+    },
+    {
+      "icon": "sentry",
+      "alt": "Sentry"
+    },
+    {
+      "icon": "jest",
+      "alt": "Jest"
+    },
+    {
+      "icon": "webpack",
+      "alt": "Webpack"
+    }
   ],
   "caseStudy": [
     {
@@ -62,5 +122,10 @@
       "type": "text",
       "content": "Key features include automatic expense categorization, budget planning tools, investment tracking, financial goal setting, and detailed analytics. The app has helped users save an average of 23% more money compared to traditional budgeting methods."
     }
+  ],
+  "relatedProjects": [
+    "blinkdo",
+    "ecoquest",
+    "subread"
   ]
 }

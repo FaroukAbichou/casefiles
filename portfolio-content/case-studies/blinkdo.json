@@ -15,26 +15,86 @@
   "caseType": "Product Concept",
   "role": "UX/UI Designer",
   "tools": [
-    { "icon": "figma", "alt": "Figma" },
-    { "icon": "framer", "alt": "Framer" },
-    { "icon": "linear", "alt": "Linear" },
-    { "icon": "notion", "alt": "Notion" },
-    { "icon": "trello", "alt": "Trello" },
-    { "icon": "asana", "alt": "Asana" },
-    { "icon": "clickup", "alt": "ClickUp" },
-    { "icon": "slack", "alt": "Slack" },
-    { "icon": "raycast", "alt": "Raycast" },
-    { "icon": "obsidian", "alt": "Obsidian" },
-    { "icon": "cursor", "alt": "Cursor" },
-    { "icon": "vscode", "alt": "VS Code" },
-    { "icon": "typescript", "alt": "TypeScript" },
-    { "icon": "react", "alt": "React" },
-    { "icon": "vite", "alt": "Vite" },
-    { "icon": "eslint", "alt": "ESLint" },
-    { "icon": "prettier", "alt": "Prettier" },
-    { "icon": "playwright", "alt": "Playwright" },
-    { "icon": "github-actions", "alt": "GitHub Actions" },
-    { "icon": "gitlab", "alt": "GitLab" }
+    {
+      "icon": "figma",
+      "alt": "Figma"
+    },
+    {
+      "icon": "framer",
+      "alt": "Framer"
+    },
+    {
+      "icon": "linear",
+      "alt": "Linear"
+    },
+    {
+      "icon": "notion",
+      "alt": "Notion"
+    },
+    {
+      "icon": "trello",
+      "alt": "Trello"
+    },
+    {
+      "icon": "asana",
+      "alt": "Asana"
+    },
+    {
+      "icon": "clickup",
+      "alt": "ClickUp"
+    },
+    {
+      "icon": "slack",
+      "alt": "Slack"
+    },
+    {
+      "icon": "raycast",
+      "alt": "Raycast"
+    },
+    {
+      "icon": "obsidian",
+      "alt": "Obsidian"
+    },
+    {
+      "icon": "cursor",
+      "alt": "Cursor"
+    },
+    {
+      "icon": "vscode",
+      "alt": "VS Code"
+    },
+    {
+      "icon": "typescript",
+      "alt": "TypeScript"
+    },
+    {
+      "icon": "react",
+      "alt": "React"
+    },
+    {
+      "icon": "vite",
+      "alt": "Vite"
+    },
+    {
+      "icon": "eslint",
+      "alt": "ESLint"
+    },
+    {
+      "icon": "prettier",
+      "alt": "Prettier"
+    },
+    {
+      "icon": "playwright",
+      "alt": "Playwright"
+    },
+    {
+      "icon": "github-actions",
+      "alt": "GitHub Actions"
+    },
+    {
+      "icon": "gitlab",
+      "alt": "GitLab"
+    }
   ],
   "caseStudy": [
     {
@@ -62,5 +122,10 @@
       "type": "text",
       "content": "Key features include smart task categorization, progress visualization, and seamless cross-device synchronization. The minimalist design philosophy ensures users can focus on what matters most - getting things done."
     }
+  ],
+  "relatedProjects": [
+    "ecoquest",
+    "financeflow",
+    "tamdone"
   ]
 }

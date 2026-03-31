@@ -1,0 +1,408 @@
+{
+  "hero": {
+    "name": "Farouk Abichou",
+    "title": "Senior Product & UI/UX Designer",
+    "available": true,
+    "status": "Freelancer",
+    "verificationBadge": "media/site/icons/verification-badge.svg",
+    "company": {
+      "name": "Softylines",
+      "position": "UX/UI Designer",
+      "logo": "media/site/softylines.svg",
+      "url": "https://www.linkedin.com/company/softylines",
+      "thumbnail": "media/site/softylines.svg"
+    },
+    "bio": "I design mobile experiences by reducing things to what actually matters—less noise, better flow, and interfaces that feel effortless to use.",
+    "location": {
+      "city": "Zarzis",
+      "country": "Tunisia",
+      "flag": "media/site/icons/tunisia-flag.svg",
+      "link": "https://unsplash.com/fr/s/photos/tunisia",
+      "timezone": "GMT+1",
+      "thumbnail": "https://images.unsplash.com/photo-1578895101408-1f401a91be1f?w=800&h=660&auto=format&fit=crop&q=80"
+    },
+    "email": "Hello@farouk.work",
+    "emailCopyTooltip": "Press c to copy my email",
+    "profileImage": "https://picsum.photos/seed/farouk-profile/256/256",
+    "keyboardShortcuts": {
+      "copyEmail": "c"
+    },
+    "established": "2002",
+    "lastUpdated": "13:13:26 GMT+1"
+  },
+  "projects": [
+    {
+      "id": "tamdone",
+      "title": "Tamdone",
+      "description": "A powerful productivity and collaboration platform designed for teams to manage tasks, projects, and goals with ease.",
+      "image": "media/projects/tamdone.png",
+      "link": "/projects/tamdone"
+    },
+    {
+      "id": "kotteb",
+      "title": "Kotteb",
+      "description": "A Quran-focused app that connects users with qualified therapists while offering seamless Quran reading and prayer tools.",
+      "image": "media/projects/kotteb.png",
+      "link": "/projects/kotteb"
+    },
+    {
+      "id": "takikids",
+      "title": "Takikids",
+      "description": "An educational gaming app that helps kids learn school subjects through fun puzzles, stories, and progress tracking.",
+      "image": "media/projects/takikids.png",
+      "link": "/projects/takikids"
+    },
+    {
+      "id": "healu",
+      "title": "Healu",
+      "description": "A friendly and accessible mental health platform offering online therapy and emotional well-being support.",
+      "image": "media/projects/healu.png",
+      "link": "/projects/healu"
+    },
+    {
+      "id": "blinkdo",
+      "title": "BlinkDo",
+      "description": "A sleek productivity app for task management that keeps focus high and friction low.",
+      "image": "media/projects/blinkdo.png",
+      "link": "/projects/blinkdo"
+    },
+    {
+      "id": "ecoquest",
+      "title": "EcoQuest",
+      "description": "Track environmental impact and discover sustainable alternatives for daily choices.",
+      "image": "media/projects/ecoquest.png",
+      "link": "/projects/ecoquest"
+    },
+    {
+      "id": "financeflow",
+      "title": "FinanceFlow",
+      "description": "Track expenses, set budgets, and hit your financial goals with clarity.",
+      "image": "media/projects/financeflow.png",
+      "link": "/projects/financeflow"
+    },
+    {
+      "id": "subread",
+      "title": "Subread",
+      "description": "A unified reading platform for newsletters and subscriptions.",
+      "image": "media/projects/subread.png",
+      "link": "/projects/subread"
+    }
+  ],
+  "experience": [
+    {
+      "id": "Softyilnes",
+      "title": "Lead UI/UX Designer",
+      "company": "Softyilnes",
+      "type": "Full-Time",
+      "startYear": 2024,
+      "endYear": null,
+      "duration": "2024 – Present",
+      "location": "On-Site",
+      "description": "At Softyilnes, I led the design of admin panels and product interfaces for real client projects like TamTasks (project management), Kotteb (Quran app), and Takikids (educational games). Focused on clean UI, component reuse, and practical collaboration with developers and PMs.",
+      "highlightBullets": [
+        "Architected and built scalable UI components for high-traffic admin dashboards",
+        "Improved user experience and reduced load times through performance-focused design",
+        "Led collaboration between designers, engineers, and PMs to align business goals with usability"
+      ],
+      "techUsed": ["Figma", "React", "Framer Motion", "TypeScript", "Tailwind CSS"],
+      "keywords": [
+        "enterprise UX",
+        "admin dashboard design",
+        "design systems",
+        "React UI",
+        "UX performance optimization",
+        "cross-functional leadership",
+        "modern UI frameworks"
+      ],
+      "thumbnail": "media/site/softylines.svg",
+      "logo": "media/site/softylines.svg",
+      "featured": true,
+      "links": {
+        "companySite": "https://softylines.com/",
+        "caseStudy": "/projects/tamdone"
+      }
+    },
+    {
+      "id": "SoftySkills",
+      "title": "UI/UX Design Instructor",
+      "company": "SoftySkills",
+      "type": "Full-Time",
+      "startYear": 2022,
+      "endYear": 2023,
+      "duration": "2022 – 2023",
+      "location": "Remote",
+      "description": "Taught modern UI/UX design principles to aspiring designers at SoftySkills. Conducted live classes, hands-on workshops, and collaborative design sessions online.",
+      "highlightBullets": [
+        "Designed dark-mode friendly and responsive UI components using Figma",
+        "Maintained WCAG 2.1 accessibility compliance in all educational material and student projects",
+        "Refactored legacy design templates into a modular and scalable UI system"
+      ],
+      "techUsed": ["Figma", "Miro", "Kahoot", "FigJam", "Zoom"],
+      "keywords": ["UX design", "UI design", "accessibility", "WCAG", "crypto UI", "online teaching", "Figma instructor", "remote UX education"],
+      "thumbnail": "media/site/softyskills-logo.svg",
+      "logo": "media/site/softyskills-logo.svg",
+      "links": {
+        "companySite": "https://softyskills.com/",
+        "projectDemo": "https://softyskills.com/crypto-ui-case-study",
+        "certificate": "https://softyskills.com/farouk-abichou-instructor-cert"
+      }
+    }
+  ],
+  "education": [
+    {
+      "id": "horizon-ux",
+      "school": "Horizon School of Digital Technologies",
+      "degree": "Bachelor's Degree",
+      "field": "UX Design & Software Architecture",
+      "startYear": 2018,
+      "endYear": 2022,
+      "location": "Tunis, Tunisia",
+      "type": "Bachelor",
+      "description": "Graduated top of class and specialized in UX and software architecture.",
+      "highlightBullets": [
+        "Completed 4 design internships during studies",
+        "Built a graduation project around accessibility in mobile learning",
+        "Published an academic article on UX for low-bandwidth regions"
+      ],
+      "logo": "https://picsum.photos/seed/horizon-logo/128/128",
+      "thumbnail": "https://picsum.photos/seed/horizon-school/400/200",
+      "diplomaImage": "https://picsum.photos/seed/diploma/800/600",
+      "certificateUrl": null,
+      "links": {
+        "schoolSite": "https://horizon-university.tn/"
+      }
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "Jia Rui Ong",
+      "quote": "Farouk did a great job designing a new mobile app, with final delivery in Figma. Communication was good and he was able to work independently after the initial project and task description. Feedback was incorporated promptly and accurately. Final work had a professional look to it and wowed initial users.",
+      "author": {
+        "name": "Jia Rui Ong",
+        "title": "Software Engineer",
+        "company": "Google",
+        "avatar": "https://picsum.photos/seed/jiaruiong/200/200",
+        "linkedin": "https://www.linkedin.com/in/jiaruiong/",
+        "companyUrl": "https://www.linkedin.com/in/jiaruiong/",
+        "companyLogo": "https://logo.clearbit.com/google.com"
+      },
+      "relatedProjectId": "portfolio-redesign-2025",
+      "date": "May 2025",
+      "verified": true,
+      "featured": true
+    },
+    {
+      "id": "Avish Jain",
+      "quote": "Farouk was incredible UX UI designer to work with. He delivered way beyond the initial scope, completing the full MVP design with a clean, scalable system ready for development,and even finished ahead of schedule. Communication was smooth, and his design thinking and execution were top-notch. Would definitely recommend him for any serious UX UI work.",
+      "author": {
+        "name": "Avish Jain",
+        "title": "Associate Manager",
+        "company": "Ebay",
+        "avatar": "https://picsum.photos/seed/avishjain/200/200",
+        "linkedin": "https://www.linkedin.com/in/jainavish/",
+        "companyUrl": "https://www.ebay.com/",
+        "companyLogo": "https://logo.clearbit.com/ebay.com"
+      },
+      "relatedProjectId": "portfolio-redesign-2025",
+      "date": "May 2025",
+      "verified": true,
+      "featured": true
+    },
+    {
+      "id": "fedichaouch",
+      "quote": "Farouk’s got a great eye for clean, intuitive design. He also gets the dev side, so his work always feels practical and ready to build. Super solid to work with.",
+      "author": {
+        "name": "Fedi Chaouch",
+        "title": "UI/UX Design Instructor,Co founder",
+        "company": "Spaceacdmy",
+        "avatar": "https://picsum.photos/seed/fedichaouch/200/200",
+        "linkedin": "https://www.linkedin.com/in/fedi-chaouch/",
+        "companyUrl": "https://thespace.academy/",
+        "companyLogo": "https://picsum.photos/seed/spaceacdmy-logo/80/80"
+      },
+      "relatedProjectId": "portfolio-redesign-2025",
+      "date": "May 2025",
+      "verified": true,
+      "featured": true
+    }
+  ],
+  "certifications": [
+    {
+      "id": "meta-react-basics",
+      "title": "React Basics",
+      "provider": "Meta",
+      "platform": "Coursera",
+      "description": "dedicating approximately 26 hours to the coursework. Achieved a final grade of 95%.dedicating approximately 26 hours to the coursework. Achieved a final grade of 95%.",
+      "durationHours": 26,
+      "grade": 95,
+      "dateCompleted": "2024-05-15",
+      "certificateUrl": "https://coursera.org/verify/example",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg",
+      "badgeImage": "media/site/icons/badge.svg",
+      "tags": ["React", "Frontend", "JavaScript"],
+      "featured": true
+    },
+    {
+      "id": "Design Specialist",
+      "title": "Design Specialist",
+      "provider": "Uxcel",
+      "platform": "Uxcel",
+      "description": "Completed the 'React Basics' course on Coursera, dedicating dedicating approximately 26 hours to the coursework. Achieved a final grade of 95%.",
+      "durationHours": 26,
+      "grade": 95,
+      "dateCompleted": "2024-05-15",
+      "certificateUrl": "https://coursera.org/verify/example",
+      "logo": "",
+      "badgeImage": "media/site/icons/badge.svg",
+      "tags": ["React", "Frontend", "JavaScript"],
+      "featured": true
+    }
+  ],
+  "media": [
+    {
+      "id": "media1",
+      "title": "My UI/UX Design Portfolio Walkthrough",
+      "type": "video",
+      "url": "https://youtu.be/o1JPNzBBTB8",
+      "thumbnail": "https://youtu.be/o1JPNzBBTB8",
+      "date": "2024-04-10",
+      "description": "A detailed walkthrough of my UI/UX design projects.",
+      "platform": "YouTube",
+      "tags": ["UI/UX", "portfolio", "design", "walkthrough"]
+    },
+    {
+      "id": "media2",
+      "title": "Interview on Design Thinking",
+      "type": "podcast",
+      "url": "https://podcasts.example.com/episode45",
+      "thumbnail": "https://podcasts.example.com/images/episode45.jpg",
+      "date": "2024-02-20",
+      "description": "Discussing design thinking principles in modern apps.",
+      "platform": "Spotify",
+      "tags": ["interview", "design thinking", "UX"]
+    },
+    {
+      "id": "media3",
+      "title": "Article: Importance of Color Theory in UX",
+      "type": "article",
+      "url": "https://medium.com/@yourname/color-theory-ux-123456",
+      "date": "May 12, 2025",
+      "description": "An article explaining how color theory improves user experience.",
+      "platform": "Medium",
+      "tags": ["color theory", "UX", "article"]
+    }
+  ],
+  "personal": {
+    "hobbies": ["photography"],
+    "camera": "Sony a6400",
+    "photos": [
+      {
+        "id": "photo2",
+        "title": "Street portrait",
+        "url": "https://picsum.photos/seed/personal-1/800/600",
+        "dateTaken": "2024-05-20",
+        "description": "A candid portrait from the local market."
+      },
+      {
+        "id": "photo3",
+        "title": "Street portrait",
+        "url": "https://picsum.photos/seed/personal-2/800/600",
+        "dateTaken": "2024-05-20",
+        "description": "A candid portrait from the local market."
+      },
+      {
+        "id": "photo4",
+        "title": "Street portrait",
+        "url": "https://picsum.photos/seed/personal-3/800/600",
+        "dateTaken": "2024-05-20",
+        "description": "A candid portrait from the local market."
+      },
+      {
+        "id": "photo1",
+        "title": "Sunset over the city",
+        "url": "https://picsum.photos/seed/personal-4/800/600",
+        "dateTaken": "2024-06-15",
+        "description": "A warm sunset captured from the rooftop."
+      }
+    ]
+  },
+  "mediaLinks": [
+    {
+      "id": "media1",
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/yourusername",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg",
+      "username": "yourusername",
+      "type": "social"
+    },
+    {
+      "id": "media2",
+      "name": "Twitter",
+      "url": "https://twitter.com/yourhandle",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg",
+      "username": "yourhandle",
+      "type": "social"
+    },
+    {
+      "id": "media3",
+      "name": "Instagram",
+      "url": "https://instagram.com/yourhandle",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/instagram/instagram-original.svg",
+      "username": "yourhandle",
+      "type": "social"
+    },
+    {
+      "id": "media4",
+      "name": "YouTube",
+      "url": "https://youtube.com/c/yourchannel",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/youtube/youtube-original.svg",
+      "username": "yourchannel",
+      "type": "video"
+    },
+    {
+      "id": "media5",
+      "name": "Medium",
+      "url": "https://medium.com/@yourusername",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/medium/medium-original.svg",
+      "username": "yourusername",
+      "type": "blog"
+    }
+  ],
+  "sections": [
+    {
+      "section": "Experience & Education",
+      "title": "Experience & Education",
+      "description": "A quick look at the roles I've held and the lessons I've learned. From hands-on work to formal education, it’s all shaped how I design."
+    },
+    {
+      "section": "Testimonials",
+      "title": "Testimonials",
+      "description": "Hear what clients and collaborators have to say about working with me. Real feedback from real projects, shared with gratitude."
+    },
+    {
+      "section": "Certifications",
+      "title": "Certifications",
+      "description": "A collection of certifications that reflect my dedication to learning. Each one adds to the foundation I build great design on."
+    },
+    {
+      "section": "Media",
+      "title": "Media",
+      "description": "Featured in talks, interviews, and showcases. This is where you can see how my work and ideas have reached a wider audience."
+    },
+    {
+      "section": "Writing",
+      "title": "Writing",
+      "description": "My thoughts, insights, and guides on design and beyond. Short reads, long-form thinking, and everything in between."
+    },
+    {
+      "section": "Personal",
+      "title": "Personal",
+      "description": "A peek into life beyond the screen. Photography, interests, and a little more about what inspires me every day."
+    },
+    {
+      "section": "Contact",
+      "title": "Contact",
+      "description": "Let's connect! Whether it’s a project, a question, or just a hello—my inbox is always open."
+    }
+  ]
+}

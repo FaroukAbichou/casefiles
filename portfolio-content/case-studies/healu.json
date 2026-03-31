@@ -15,25 +15,82 @@
   "caseType": "Healthcare Product",
   "role": "UX/UI Designer",
   "tools": [
-    { "icon": "figma", "alt": "Figma" },
-    { "icon": "sketch", "alt": "Sketch" },
-    { "icon": "slack", "alt": "Slack" },
-    { "icon": "zoom", "alt": "Zoom" },
-    { "icon": "calendly", "alt": "Calendly" },
-    { "icon": "intercom", "alt": "Intercom" },
-    { "icon": "zendesk", "alt": "Zendesk" },
-    { "icon": "hotjar", "alt": "Hotjar" },
-    { "icon": "amplitude", "alt": "Amplitude" },
-    { "icon": "mailchimp", "alt": "Mailchimp" },
-    { "icon": "typescript", "alt": "TypeScript" },
-    { "icon": "react", "alt": "React" },
-    { "icon": "nextjs", "alt": "Next.js" },
-    { "icon": "supabase", "alt": "Supabase" },
-    { "icon": "postgres", "alt": "PostgreSQL" },
-    { "icon": "sentry", "alt": "Sentry" },
-    { "icon": "docker", "alt": "Docker" },
-    { "icon": "stripe", "alt": "Stripe" },
-    { "icon": "okta", "alt": "Okta" }
+    {
+      "icon": "figma",
+      "alt": "Figma"
+    },
+    {
+      "icon": "sketch",
+      "alt": "Sketch"
+    },
+    {
+      "icon": "slack",
+      "alt": "Slack"
+    },
+    {
+      "icon": "zoom",
+      "alt": "Zoom"
+    },
+    {
+      "icon": "calendly",
+      "alt": "Calendly"
+    },
+    {
+      "icon": "intercom",
+      "alt": "Intercom"
+    },
+    {
+      "icon": "zendesk",
+      "alt": "Zendesk"
+    },
+    {
+      "icon": "hotjar",
+      "alt": "Hotjar"
+    },
+    {
+      "icon": "amplitude",
+      "alt": "Amplitude"
+    },
+    {
+      "icon": "mailchimp",
+      "alt": "Mailchimp"
+    },
+    {
+      "icon": "typescript",
+      "alt": "TypeScript"
+    },
+    {
+      "icon": "react",
+      "alt": "React"
+    },
+    {
+      "icon": "nextjs",
+      "alt": "Next.js"
+    },
+    {
+      "icon": "supabase",
+      "alt": "Supabase"
+    },
+    {
+      "icon": "postgres",
+      "alt": "PostgreSQL"
+    },
+    {
+      "icon": "sentry",
+      "alt": "Sentry"
+    },
+    {
+      "icon": "docker",
+      "alt": "Docker"
+    },
+    {
+      "icon": "stripe",
+      "alt": "Stripe"
+    },
+    {
+      "icon": "okta",
+      "alt": "Okta"
+    }
   ],
   "caseStudy": [
     {
@@ -61,5 +118,11 @@
       "type": "text",
       "content": "Key features include therapist matching, video therapy sessions, mood tracking, guided meditation, and crisis support resources. The platform has helped over 25,000 users access mental health care and has a 95% user satisfaction rate."
     }
+  ],
+  "relatedProjects": [
+    "kotteb",
+    "takikids",
+    "subread",
+    "blinkdo"
   ]
 }

@@ -11,29 +11,97 @@
   "description": "A Quran-focused app that connects users with qualified therapists while offering seamless Quran reading and prayer tools.",
   "figmaEmbedUrl": "https://embed.figma.com/design/cRaUZ2ZE6r9Tumc9i58WZM/%F0%9F%95%8C-Kotteb?node-id=0-1&embed-host=share",
   "tools": [
-    { "icon": "figma", "alt": "Figma" },
-    { "icon": "sketch", "alt": "Sketch" },
-    { "icon": "zeplin", "alt": "Zeplin" },
-    { "icon": "notion", "alt": "Notion" },
-    { "icon": "slack", "alt": "Slack" },
-    { "icon": "miro", "alt": "Miro" },
-    { "icon": "jira", "alt": "Jira" },
-    { "icon": "linear", "alt": "Linear" },
-    { "icon": "android", "alt": "Android" },
-    { "icon": "kotlin", "alt": "Kotlin" },
-    { "icon": "swift", "alt": "Swift" },
-    { "icon": "firebase", "alt": "Firebase" },
-    { "icon": "typescript", "alt": "TypeScript" },
-    { "icon": "react", "alt": "React" },
-    { "icon": "graphql", "alt": "GraphQL" },
-    { "icon": "apollo", "alt": "Apollo" },
-    { "icon": "postgres", "alt": "PostgreSQL" },
-    { "icon": "docker", "alt": "Docker" },
-    { "icon": "sentry", "alt": "Sentry" },
-    { "icon": "openai", "alt": "OpenAI" },
-    { "icon": "anthropic", "alt": "Anthropic" }
+    {
+      "icon": "figma",
+      "alt": "Figma"
+    },
+    {
+      "icon": "sketch",
+      "alt": "Sketch"
+    },
+    {
+      "icon": "zeplin",
+      "alt": "Zeplin"
+    },
+    {
+      "icon": "notion",
+      "alt": "Notion"
+    },
+    {
+      "icon": "slack",
+      "alt": "Slack"
+    },
+    {
+      "icon": "miro",
+      "alt": "Miro"
+    },
+    {
+      "icon": "jira",
+      "alt": "Jira"
+    },
+    {
+      "icon": "linear",
+      "alt": "Linear"
+    },
+    {
+      "icon": "android",
+      "alt": "Android"
+    },
+    {
+      "icon": "kotlin",
+      "alt": "Kotlin"
+    },
+    {
+      "icon": "swift",
+      "alt": "Swift"
+    },
+    {
+      "icon": "firebase",
+      "alt": "Firebase"
+    },
+    {
+      "icon": "typescript",
+      "alt": "TypeScript"
+    },
+    {
+      "icon": "react",
+      "alt": "React"
+    },
+    {
+      "icon": "graphql",
+      "alt": "GraphQL"
+    },
+    {
+      "icon": "apollo",
+      "alt": "Apollo"
+    },
+    {
+      "icon": "postgres",
+      "alt": "PostgreSQL"
+    },
+    {
+      "icon": "docker",
+      "alt": "Docker"
+    },
+    {
+      "icon": "sentry",
+      "alt": "Sentry"
+    },
+    {
+      "icon": "openai",
+      "alt": "OpenAI"
+    },
+    {
+      "icon": "anthropic",
+      "alt": "Anthropic"
+    }
   ],
-  "relatedProjects": ["tamdone", "takikids", "healu"],
+  "relatedProjects": [
+    "tamdone",
+    "takikids",
+    "healu",
+    "subread"
+  ],
   "sections": [
     {
       "id": "data-viz-showcase",
@@ -81,15 +149,42 @@
           "legend": true,
           "height": 260,
           "series": [
-            { "key": "retention", "label": "Returning users %" },
-            { "key": "stress", "label": "Support contacts / 1k", "color": "var(--ui-chart-series-3)" }
+            {
+              "key": "retention",
+              "label": "Returning users %"
+            },
+            {
+              "key": "stress",
+              "label": "Support contacts / 1k",
+              "color": "var(--ui-chart-series-3)"
+            }
           ],
           "data": [
-            { "week": "W1", "retention": 38, "stress": 14 },
-            { "week": "W2", "retention": 41, "stress": 12 },
-            { "week": "W3", "retention": 43, "stress": 11 },
-            { "week": "W4", "retention": 45, "stress": 10 },
-            { "week": "W5", "retention": 46, "stress": 9 }
+            {
+              "week": "W1",
+              "retention": 38,
+              "stress": 14
+            },
+            {
+              "week": "W2",
+              "retention": 41,
+              "stress": 12
+            },
+            {
+              "week": "W3",
+              "retention": 43,
+              "stress": 11
+            },
+            {
+              "week": "W4",
+              "retention": 45,
+              "stress": 10
+            },
+            {
+              "week": "W5",
+              "retention": 46,
+              "stress": 9
+            }
           ]
         },
         {
@@ -101,13 +196,32 @@
           "legend": true,
           "height": 260,
           "series": [
-            { "key": "baseline", "label": "Baseline", "color": "var(--on-background-2)" },
-            { "key": "shipped", "label": "Shipped" }
+            {
+              "key": "baseline",
+              "label": "Baseline",
+              "color": "var(--on-background-2)"
+            },
+            {
+              "key": "shipped",
+              "label": "Shipped"
+            }
           ],
           "data": [
-            { "stage": "Aware", "baseline": 100, "shipped": 100 },
-            { "stage": "Try", "baseline": 71, "shipped": 82 },
-            { "stage": "Adopt", "baseline": 38, "shipped": 54 }
+            {
+              "stage": "Aware",
+              "baseline": 100,
+              "shipped": 100
+            },
+            {
+              "stage": "Try",
+              "baseline": 71,
+              "shipped": 82
+            },
+            {
+              "stage": "Adopt",
+              "baseline": 38,
+              "shipped": 54
+            }
           ]
         },
         {
@@ -119,15 +233,42 @@
           "legend": true,
           "height": 260,
           "series": [
-            { "key": "minutes", "label": "Active minutes" },
-            { "key": "sessions", "label": "Sessions", "color": "var(--ui-chart-series-4)" }
+            {
+              "key": "minutes",
+              "label": "Active minutes"
+            },
+            {
+              "key": "sessions",
+              "label": "Sessions",
+              "color": "var(--ui-chart-series-4)"
+            }
           ],
           "data": [
-            { "day": "Mon", "minutes": 42, "sessions": 6 },
-            { "day": "Tue", "minutes": 51, "sessions": 7 },
-            { "day": "Wed", "minutes": 48, "sessions": 6 },
-            { "day": "Thu", "minutes": 55, "sessions": 8 },
-            { "day": "Fri", "minutes": 61, "sessions": 9 }
+            {
+              "day": "Mon",
+              "minutes": 42,
+              "sessions": 6
+            },
+            {
+              "day": "Tue",
+              "minutes": 51,
+              "sessions": 7
+            },
+            {
+              "day": "Wed",
+              "minutes": 48,
+              "sessions": 6
+            },
+            {
+              "day": "Thu",
+              "minutes": 55,
+              "sessions": 8
+            },
+            {
+              "day": "Fri",
+              "minutes": 61,
+              "sessions": 9
+            }
           ]
         },
         {
@@ -138,17 +279,51 @@
           "xKey": "month",
           "legend": true,
           "height": 280,
-          "composedLayerTypes": ["bar", "line", "area"],
+          "composedLayerTypes": [
+            "bar",
+            "line",
+            "area"
+          ],
           "series": [
-            { "key": "taskOk", "label": "Task success %" },
-            { "key": "trust", "label": "Trust %" },
-            { "key": "csat", "label": "CSAT (1–5 x20)", "color": "var(--ui-chart-series-6)" }
+            {
+              "key": "taskOk",
+              "label": "Task success %"
+            },
+            {
+              "key": "trust",
+              "label": "Trust %"
+            },
+            {
+              "key": "csat",
+              "label": "CSAT (1–5 x20)",
+              "color": "var(--ui-chart-series-6)"
+            }
           ],
           "data": [
-            { "month": "Jan", "taskOk": 72, "trust": 61, "csat": 78 },
-            { "month": "Feb", "taskOk": 76, "trust": 66, "csat": 80 },
-            { "month": "Mar", "taskOk": 79, "trust": 70, "csat": 82 },
-            { "month": "Apr", "taskOk": 82, "trust": 74, "csat": 84 }
+            {
+              "month": "Jan",
+              "taskOk": 72,
+              "trust": 61,
+              "csat": 78
+            },
+            {
+              "month": "Feb",
+              "taskOk": 76,
+              "trust": 66,
+              "csat": 80
+            },
+            {
+              "month": "Mar",
+              "taskOk": 79,
+              "trust": 70,
+              "csat": 82
+            },
+            {
+              "month": "Apr",
+              "taskOk": 82,
+              "trust": 74,
+              "csat": 84
+            }
           ]
         },
         {
@@ -160,15 +335,42 @@
           "legend": true,
           "height": 280,
           "series": [
-            { "key": "focus", "label": "Focus score" },
-            { "key": "ease", "label": "Ease score", "color": "var(--ui-chart-series-2)" }
+            {
+              "key": "focus",
+              "label": "Focus score"
+            },
+            {
+              "key": "ease",
+              "label": "Ease score",
+              "color": "var(--ui-chart-series-2)"
+            }
           ],
           "data": [
-            { "minutes": 8, "focus": 3.1, "ease": 2.9 },
-            { "minutes": 12, "focus": 3.6, "ease": 3.2 },
-            { "minutes": 16, "focus": 4.0, "ease": 3.4 },
-            { "minutes": 20, "focus": 4.2, "ease": 3.8 },
-            { "minutes": 24, "focus": 4.5, "ease": 3.9 }
+            {
+              "minutes": 8,
+              "focus": 3.1,
+              "ease": 2.9
+            },
+            {
+              "minutes": 12,
+              "focus": 3.6,
+              "ease": 3.2
+            },
+            {
+              "minutes": 16,
+              "focus": 4,
+              "ease": 3.4
+            },
+            {
+              "minutes": 20,
+              "focus": 4.2,
+              "ease": 3.8
+            },
+            {
+              "minutes": 24,
+              "focus": 4.5,
+              "ease": 3.9
+            }
           ]
         },
         {
@@ -180,15 +382,42 @@
           "legend": true,
           "height": 300,
           "series": [
-            { "key": "pilot", "label": "Pilot" },
-            { "key": "live", "label": "Live", "color": "var(--ui-chart-series-1)" }
+            {
+              "key": "pilot",
+              "label": "Pilot"
+            },
+            {
+              "key": "live",
+              "label": "Live",
+              "color": "var(--ui-chart-series-1)"
+            }
           ],
           "data": [
-            { "axis": "Clarity", "pilot": 62, "live": 86 },
-            { "axis": "Trust", "pilot": 58, "live": 81 },
-            { "axis": "Speed", "pilot": 55, "live": 78 },
-            { "axis": "Support", "pilot": 51, "live": 74 },
-            { "axis": "Delight", "pilot": 60, "live": 83 }
+            {
+              "axis": "Clarity",
+              "pilot": 62,
+              "live": 86
+            },
+            {
+              "axis": "Trust",
+              "pilot": 58,
+              "live": 81
+            },
+            {
+              "axis": "Speed",
+              "pilot": 55,
+              "live": 78
+            },
+            {
+              "axis": "Support",
+              "pilot": 51,
+              "live": 74
+            },
+            {
+              "axis": "Delight",
+              "pilot": 60,
+              "live": 83
+            }
           ]
         },
         {
@@ -200,10 +429,22 @@
           "radialValueKey": "score",
           "height": 300,
           "data": [
-            { "segment": "Onboarding", "score": 72 },
-            { "segment": "Reading", "score": 88 },
-            { "segment": "Prayer", "score": 64 },
-            { "segment": "Therapy", "score": 56 }
+            {
+              "segment": "Onboarding",
+              "score": 72
+            },
+            {
+              "segment": "Reading",
+              "score": 88
+            },
+            {
+              "segment": "Prayer",
+              "score": 64
+            },
+            {
+              "segment": "Therapy",
+              "score": 56
+            }
           ]
         },
         {
@@ -218,9 +459,18 @@
           "valueKey": "value",
           "height": 280,
           "data": [
-            { "name": "Mobile", "value": 54 },
-            { "name": "Tablet", "value": 26 },
-            { "name": "Web", "value": 20 }
+            {
+              "name": "Mobile",
+              "value": 54
+            },
+            {
+              "name": "Tablet",
+              "value": 26
+            },
+            {
+              "name": "Web",
+              "value": 20
+            }
           ]
         },
         {
@@ -233,10 +483,22 @@
           "categoryKey": "name",
           "valueKey": "value",
           "data": [
-            { "name": "Reading", "value": 38 },
-            { "name": "Prayer", "value": 24 },
-            { "name": "Therapy", "value": 22 },
-            { "name": "Education", "value": 16 }
+            {
+              "name": "Reading",
+              "value": 38
+            },
+            {
+              "name": "Prayer",
+              "value": 24
+            },
+            {
+              "name": "Therapy",
+              "value": 22
+            },
+            {
+              "name": "Education",
+              "value": 16
+            }
           ]
         },
         {
@@ -248,10 +510,22 @@
           "valueKey": "users",
           "height": 300,
           "data": [
-            { "stage": "Install", "users": 10000 },
-            { "stage": "Account", "users": 6400 },
-            { "stage": "First ritual", "users": 4100 },
-            { "stage": "Return D7", "users": 2600 }
+            {
+              "stage": "Install",
+              "users": 10000
+            },
+            {
+              "stage": "Account",
+              "users": 6400
+            },
+            {
+              "stage": "First ritual",
+              "users": 4100
+            },
+            {
+              "stage": "Return D7",
+              "users": 2600
+            }
           ]
         },
         {
@@ -265,16 +539,31 @@
             {
               "name": "Engagement",
               "children": [
-                { "name": "Quran", "value": 420 },
-                { "name": "Dhikr", "value": 280 },
-                { "name": "Mood check-in", "value": 160 }
+                {
+                  "name": "Quran",
+                  "value": 420
+                },
+                {
+                  "name": "Dhikr",
+                  "value": 280
+                },
+                {
+                  "name": "Mood check-in",
+                  "value": 160
+                }
               ]
             },
             {
               "name": "Care",
               "children": [
-                { "name": "Therapist browse", "value": 220 },
-                { "name": "Bookings", "value": 140 }
+                {
+                  "name": "Therapist browse",
+                  "value": 220
+                },
+                {
+                  "name": "Bookings",
+                  "value": 140
+                }
               ]
             }
           ]
@@ -356,7 +645,6 @@
           "stopAfterMs": 2200,
           "maxHeight": "220px"
         },
-        
         {
           "type": "video",
           "videoId": "dQw4w9WgXcQ"
@@ -390,63 +678,182 @@
         {
           "type": "docTable",
           "titleInline": [
-            { "type": "text", "content": "Content model (" },
-            { "type": "pill", "content": "projects.ts" },
-            { "type": "text", "content": " + " },
-            { "type": "pill", "content": "CasestudyContent.tsx" },
-            { "type": "text", "content": ")" }
+            {
+              "type": "text",
+              "content": "Content model ("
+            },
+            {
+              "type": "pill",
+              "content": "projects.ts"
+            },
+            {
+              "type": "text",
+              "content": " + "
+            },
+            {
+              "type": "pill",
+              "content": "CasestudyContent.tsx"
+            },
+            {
+              "type": "text",
+              "content": ")"
+            }
           ],
           "subtitleInline": [
-            { "type": "text", "content": "Optional fields on " },
-            { "type": "pill", "content": "code" },
-            { "type": "text", "content": " blocks:" }
+            {
+              "type": "text",
+              "content": "Optional fields on "
+            },
+            {
+              "type": "pill",
+              "content": "code"
+            },
+            {
+              "type": "text",
+              "content": " blocks:"
+            }
           ],
           "columns": [
-            { "id": "field", "header": "Field" },
-            { "id": "purpose", "header": "Purpose" },
-            { "id": "purpose", "header": "Purpose" },
-            { "id": "purpose", "header": "Purpose" }
+            {
+              "id": "field",
+              "header": "Field"
+            },
+            {
+              "id": "purpose",
+              "header": "Purpose"
+            },
+            {
+              "id": "purpose",
+              "header": "Purpose"
+            },
+            {
+              "id": "purpose",
+              "header": "Purpose"
+            }
           ],
           "rows": [
             {
-              "field": [{ "type": "pill", "content": "fileName" }],
+              "field": [
+                {
+                  "type": "pill",
+                  "content": "fileName"
+                }
+              ],
               "purpose": [
-                { "type": "text", "content": "Header path, e.g. " },
-                { "type": "pill", "content": "app/page.tsx" }
+                {
+                  "type": "text",
+                  "content": "Header path, e.g. "
+                },
+                {
+                  "type": "pill",
+                  "content": "app/page.tsx"
+                }
               ]
             },
             {
-              "field": [{ "type": "pill", "content": "language" }],
+              "field": [
+                {
+                  "type": "pill",
+                  "content": "language"
+                }
+              ],
               "purpose": [
-                { "type": "text", "content": "Prism id: " },
-                { "type": "pill", "content": "tsx" },
-                { "type": "text", "content": ", " },
-                { "type": "pill", "content": "typescript" },
-                { "type": "text", "content": ", " },
-                { "type": "pill", "content": "javascript" },
-                { "type": "text", "content": ", " },
-                { "type": "pill", "content": "json" },
-                { "type": "text", "content": ", …" }
+                {
+                  "type": "text",
+                  "content": "Prism id: "
+                },
+                {
+                  "type": "pill",
+                  "content": "tsx"
+                },
+                {
+                  "type": "text",
+                  "content": ", "
+                },
+                {
+                  "type": "pill",
+                  "content": "typescript"
+                },
+                {
+                  "type": "text",
+                  "content": ", "
+                },
+                {
+                  "type": "pill",
+                  "content": "javascript"
+                },
+                {
+                  "type": "text",
+                  "content": ", "
+                },
+                {
+                  "type": "pill",
+                  "content": "json"
+                },
+                {
+                  "type": "text",
+                  "content": ", …"
+                }
               ]
             },
             {
-              "field": [{ "type": "pill", "content": "languageLabel" }],
+              "field": [
+                {
+                  "type": "pill",
+                  "content": "languageLabel"
+                }
+              ],
               "purpose": [
-                { "type": "text", "content": "Overrides the header language label (default maps from " },
-                { "type": "pill", "content": "language" },
-                { "type": "text", "content": ", e.g. " },
-                { "type": "pill", "content": "tsx" },
-                { "type": "text", "content": " → TypeScript)." }
+                {
+                  "type": "text",
+                  "content": "Overrides the header language label (default maps from "
+                },
+                {
+                  "type": "pill",
+                  "content": "language"
+                },
+                {
+                  "type": "text",
+                  "content": ", e.g. "
+                },
+                {
+                  "type": "pill",
+                  "content": "tsx"
+                },
+                {
+                  "type": "text",
+                  "content": " → TypeScript)."
+                }
               ]
             },
             {
-              "field": [{ "type": "pill", "content": "languageLabel" }],
+              "field": [
+                {
+                  "type": "pill",
+                  "content": "languageLabel"
+                }
+              ],
               "purpose": [
-                { "type": "text", "content": "Overrides the header language label (default maps from " },
-                { "type": "pill", "content": "language" },
-                { "type": "text", "content": ", e.g. " },
-                { "type": "pill", "content": "tsx" },
-                { "type": "text", "content": " → TypeScript)." }
+                {
+                  "type": "text",
+                  "content": "Overrides the header language label (default maps from "
+                },
+                {
+                  "type": "pill",
+                  "content": "language"
+                },
+                {
+                  "type": "text",
+                  "content": ", e.g. "
+                },
+                {
+                  "type": "pill",
+                  "content": "tsx"
+                },
+                {
+                  "type": "text",
+                  "content": " → TypeScript)."
+                }
               ]
             }
           ]

@@ -15,26 +15,86 @@
   "caseType": "Full-time | Startup MVP",
   "role": "Lead Product Designer — responsible for everything from design systems to user research, analysis, and mentoring junior designers",
   "tools": [
-    { "icon": "figma", "alt": "Figma" },
-    { "icon": "framer", "alt": "Framer" },
-    { "icon": "miro", "alt": "Miro" },
-    { "icon": "zeplin", "alt": "Zeplin" },
-    { "icon": "slack", "alt": "Slack" },
-    { "icon": "notion", "alt": "Notion" },
-    { "icon": "jira", "alt": "Jira" },
-    { "icon": "linear", "alt": "Linear" },
-    { "icon": "asana", "alt": "Asana" },
-    { "icon": "zoom", "alt": "Zoom" },
-    { "icon": "loom", "alt": "Loom" },
-    { "icon": "typescript", "alt": "TypeScript" },
-    { "icon": "react", "alt": "React" },
-    { "icon": "nextjs", "alt": "Next.js" },
-    { "icon": "tailwindcss", "alt": "Tailwind CSS" },
-    { "icon": "vercel", "alt": "Vercel" },
-    { "icon": "github", "alt": "GitHub" },
-    { "icon": "docker", "alt": "Docker" },
-    { "icon": "postman", "alt": "Postman" },
-    { "icon": "sentry", "alt": "Sentry" }
+    {
+      "icon": "figma",
+      "alt": "Figma"
+    },
+    {
+      "icon": "framer",
+      "alt": "Framer"
+    },
+    {
+      "icon": "miro",
+      "alt": "Miro"
+    },
+    {
+      "icon": "zeplin",
+      "alt": "Zeplin"
+    },
+    {
+      "icon": "slack",
+      "alt": "Slack"
+    },
+    {
+      "icon": "notion",
+      "alt": "Notion"
+    },
+    {
+      "icon": "jira",
+      "alt": "Jira"
+    },
+    {
+      "icon": "linear",
+      "alt": "Linear"
+    },
+    {
+      "icon": "asana",
+      "alt": "Asana"
+    },
+    {
+      "icon": "zoom",
+      "alt": "Zoom"
+    },
+    {
+      "icon": "loom",
+      "alt": "Loom"
+    },
+    {
+      "icon": "typescript",
+      "alt": "TypeScript"
+    },
+    {
+      "icon": "react",
+      "alt": "React"
+    },
+    {
+      "icon": "nextjs",
+      "alt": "Next.js"
+    },
+    {
+      "icon": "tailwindcss",
+      "alt": "Tailwind CSS"
+    },
+    {
+      "icon": "vercel",
+      "alt": "Vercel"
+    },
+    {
+      "icon": "github",
+      "alt": "GitHub"
+    },
+    {
+      "icon": "docker",
+      "alt": "Docker"
+    },
+    {
+      "icon": "postman",
+      "alt": "Postman"
+    },
+    {
+      "icon": "sentry",
+      "alt": "Sentry"
+    }
   ],
   "caseStudy": [
     {
@@ -62,5 +122,11 @@
       "type": "text",
       "content": "The platform successfully improved team productivity by 40% and reduced project completion time by 25% through streamlined workflows and intuitive task management."
     }
+  ],
+  "relatedProjects": [
+    "kotteb",
+    "takikids",
+    "blinkdo",
+    "financeflow"
   ]
 }
