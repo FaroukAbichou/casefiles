@@ -51,42 +51,48 @@
       "title": "Tamdone",
       "description": "A powerful productivity and collaboration platform designed for teams to manage tasks, projects, and goals with ease.",
       "image": "media/projects/tamdone.png",
-      "link": "/projects/tamdone"
+      "link": "/projects/tamdone",
+      "homeCanvasPriority": 1
     },
     {
       "id": "kotteb",
       "title": "Kotteb",
       "description": "A Quran-focused app that connects users with qualified therapists while offering seamless Quran reading and prayer tools.",
       "image": "media/projects/kotteb.png",
-      "link": "/projects/kotteb"
+      "link": "/projects/kotteb",
+      "homeCanvasPriority": 2
     },
     {
       "id": "takikids",
       "title": "Takikids",
       "description": "An educational gaming app that helps kids learn school subjects through fun puzzles, stories, and progress tracking.",
       "image": "media/projects/takikids.png",
-      "link": "/projects/takikids"
+      "link": "/projects/takikids",
+      "homeCanvasPriority": 3
     },
     {
       "id": "healu",
       "title": "Healu",
       "description": "A friendly and accessible mental health platform offering online therapy and emotional well-being support.",
       "image": "media/projects/healu.png",
-      "link": "/projects/healu"
+      "link": "/projects/healu",
+      "homeCanvasPriority": 4
     },
     {
       "id": "blinkdo",
       "title": "BlinkDo",
       "description": "A sleek productivity app for task management that keeps focus high and friction low.",
       "image": "media/projects/blinkdo.png",
-      "link": "/projects/blinkdo"
+      "link": "/projects/blinkdo",
+      "homeCanvasPriority": 5
     },
     {
       "id": "ecoquest",
       "title": "EcoQuest",
       "description": "Track environmental impact and discover sustainable alternatives for daily choices.",
       "image": "media/projects/ecoquest.png",
-      "link": "/projects/ecoquest"
+      "link": "/projects/ecoquest",
+      "homeCanvasPriority": 6
     },
     {
       "id": "financeflow",

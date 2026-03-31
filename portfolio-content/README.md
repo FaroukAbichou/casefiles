@@ -6,7 +6,7 @@ Single source of truth for portfolio **site copy**, **case studies**, **writing 
 
 | Path | Purpose |
 |------|---------|
-| `site/site.json` | Home page: hero, optional `brandAssets` (favicon, photo, signatures), optional `documents` (PDF paths), projects list, experience, education, testimonials, certifications, sections metadata, etc. |
+| `site/site.json` | Home page: hero, optional `brandAssets` (favicon, photo, signatures), optional `documents` (PDF paths), `projects[]` (each entry may set `homeCanvasPriority`: lower = higher on the home canvas; only prioritized entries appear there, max 6 desktop / 4 tablet), experience, education, testimonials, certifications, sections metadata, etc. |
 | `case-studies/manifest.json` | `{ "slugs": [...] }` — case study discovery |
 | `case-studies/{slug}.json` | One case study file per project (`ProjectData`). Use `relatedProjects: ["other-slug", ...]` to cross-link. |
 | `blog/articles.json` | `{ "articles": [ … ] }` — writing section |
