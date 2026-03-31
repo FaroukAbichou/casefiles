@@ -6,12 +6,14 @@ Single source of truth for portfolio **site copy**, **case studies**, **writing 
 
 | Path | Purpose |
 |------|---------|
-| `site/site.json` | Home page: hero, projects list, experience, education, testimonials, certifications, sections metadata, etc. |
+| `site/site.json` | Home page: hero, optional `brandAssets` (favicon, photo, signatures), optional `documents` (PDF paths), projects list, experience, education, testimonials, certifications, sections metadata, etc. |
 | `case-studies/manifest.json` | `{ "slugs": [...] }` — case study discovery |
 | `case-studies/{slug}.json` | One case study file per project (`ProjectData`). Use `relatedProjects: ["other-slug", ...]` to cross-link. |
 | `blog/articles.json` | `{ "articles": [ … ] }` — writing section |
 | `media/projects/` | Project thumbnails & case study images (`media/projects/{slug}.png`) |
-| `media/site/` | Site-wide assets (logos, flags, badges, etc.) under `media/site/...` |
+| `media/site/` | Site-wide assets: `icons/`, `brand/`, `people/`, `education/`, `experience/`, root SVGs like `softylines.svg` |
+| `media/marketing/banners/` | Open Graph / social preview images (referenced from the Next app) |
+| `media/documents/` | CV and resume PDFs (`cv-product-designer-*.pdf`, `resume-*.pdf`) |
 
 ## After you edit content
 

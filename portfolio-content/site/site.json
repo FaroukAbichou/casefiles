@@ -30,6 +30,21 @@
     "established": "2002",
     "lastUpdated": "13:13:26 GMT+1"
   },
+  "brandAssets": {
+    "faviconSvg": "media/site/brand/farouk-favicon.svg",
+    "faviconPng": "media/site/brand/farouk-favicon.png",
+    "personPhoto": "media/site/people/farouk-abichou.png",
+    "signatures": {
+      "black": "media/site/brand/signature-black.svg",
+      "white": "media/site/brand/signature-white.svg"
+    }
+  },
+  "documents": {
+    "cvEn": "media/documents/cv-product-designer-en.pdf",
+    "cvFr": "media/documents/cv-product-designer-fr.pdf",
+    "resumeEn": "media/documents/resume-english.pdf",
+    "resumeFr": "media/documents/resume-francais.pdf"
+  },
   "projects": [
     {
       "id": "tamdone",
@@ -114,7 +129,7 @@
         "cross-functional leadership",
         "modern UI frameworks"
       ],
-      "thumbnail": "media/site/softylines.svg",
+      "thumbnail": "media/site/experience/softylines-pic.png",
       "logo": "media/site/softylines.svg",
       "featured": true,
       "links": {
@@ -139,7 +154,7 @@
       ],
       "techUsed": ["Figma", "Miro", "Kahoot", "FigJam", "Zoom"],
       "keywords": ["UX design", "UI design", "accessibility", "WCAG", "crypto UI", "online teaching", "Figma instructor", "remote UX education"],
-      "thumbnail": "media/site/softyskills-logo.svg",
+      "thumbnail": "media/site/experience/softyskills-education-thumbnail.png",
       "logo": "media/site/softyskills-logo.svg",
       "links": {
         "companySite": "https://softyskills.com/",
@@ -164,8 +179,8 @@
         "Built a graduation project around accessibility in mobile learning",
         "Published an academic article on UX for low-bandwidth regions"
       ],
-      "logo": "https://picsum.photos/seed/horizon-logo/128/128",
-      "thumbnail": "https://picsum.photos/seed/horizon-school/400/200",
+      "logo": "media/site/education/horizon-logo.jpg",
+      "thumbnail": "media/site/education/horizon-school.png",
       "diplomaImage": "https://picsum.photos/seed/diploma/800/600",
       "certificateUrl": null,
       "links": {
