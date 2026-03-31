@@ -1,0 +1,65 @@
+{
+  "slug": "healu",
+  "title": "Healu",
+  "src": "media/projects/healu.png",
+  "previewSrc": "media/projects/healu.png",
+  "websiteUrl": "https://healutherapy.com/en",
+  "date": "2024-05-10",
+  "shortDescription": "Accessible online therapy and wellbeing support.",
+  "longDescription": "A friendly and accessible mental health platform offering online therapy and emotional well-being support.",
+  "description": "A friendly and accessible mental health platform offering online therapy and emotional well-being support.",
+  "figmaEmbedUrl": "https://www.figma.com/embed?embed_host=farouk.work&url=https://www.figma.com/file/healu-design",
+  "result": "Reduced onboarding friction and increased first-session booking confidence.",
+  "team": "1 Product Designer, 1 Product Manager, 2 Developers",
+  "duration": "9 weeks",
+  "caseType": "Healthcare Product",
+  "role": "UX/UI Designer",
+  "tools": [
+    { "icon": "figma", "alt": "Figma" },
+    { "icon": "sketch", "alt": "Sketch" },
+    { "icon": "slack", "alt": "Slack" },
+    { "icon": "zoom", "alt": "Zoom" },
+    { "icon": "calendly", "alt": "Calendly" },
+    { "icon": "intercom", "alt": "Intercom" },
+    { "icon": "zendesk", "alt": "Zendesk" },
+    { "icon": "hotjar", "alt": "Hotjar" },
+    { "icon": "amplitude", "alt": "Amplitude" },
+    { "icon": "mailchimp", "alt": "Mailchimp" },
+    { "icon": "typescript", "alt": "TypeScript" },
+    { "icon": "react", "alt": "React" },
+    { "icon": "nextjs", "alt": "Next.js" },
+    { "icon": "supabase", "alt": "Supabase" },
+    { "icon": "postgres", "alt": "PostgreSQL" },
+    { "icon": "sentry", "alt": "Sentry" },
+    { "icon": "docker", "alt": "Docker" },
+    { "icon": "stripe", "alt": "Stripe" },
+    { "icon": "okta", "alt": "Okta" }
+  ],
+  "caseStudy": [
+    {
+      "type": "text",
+      "content": "Healu was designed to break down barriers to mental health care by creating a warm, welcoming platform that makes therapy accessible to everyone. The app focuses on creating a safe, judgment-free environment where users can seek help without stigma."
+    },
+    {
+      "type": "image",
+      "src": "media/projects/healu.png",
+      "alt": "Healu therapy platform interface with calming design"
+    },
+    {
+      "type": "text",
+      "content": "The design process prioritized creating a calming, trustworthy interface that would make users feel comfortable sharing their mental health concerns. We used soft colors, gentle animations, and clear navigation to reduce anxiety and build confidence."
+    },
+    {
+      "type": "video",
+      "videoId": "dQw4w9WgXcQ"
+    },
+    {
+      "type": "figma",
+      "url": "https://www.figma.com/file/healu-design"
+    },
+    {
+      "type": "text",
+      "content": "Key features include therapist matching, video therapy sessions, mood tracking, guided meditation, and crisis support resources. The platform has helped over 25,000 users access mental health care and has a 95% user satisfaction rate."
+    }
+  ]
+}

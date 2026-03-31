@@ -1,0 +1,66 @@
+{
+  "slug": "blinkdo",
+  "title": "BlinkDo",
+  "date": "2025-08-01",
+  "src": "media/projects/blinkdo.png",
+  "previewSrc": "media/projects/blinkdo.png",
+  "websiteUrl": "https://farouk.work/projects/blinkdo",
+  "shortDescription": "Minimal task management for busy days.",
+  "longDescription": "A sleek productivity app for task management that keeps focus high and friction low across your day-to-day planning.",
+  "description": "A sleek productivity app for task management.",
+  "figmaEmbedUrl": "https://www.figma.com/embed?embed_host=farouk.work&url=https://www.figma.com/file/abc123",
+  "result": "Improved task completion consistency with a simpler workflow.",
+  "team": "1 Product Designer, 2 Developers",
+  "duration": "8 weeks",
+  "caseType": "Product Concept",
+  "role": "UX/UI Designer",
+  "tools": [
+    { "icon": "figma", "alt": "Figma" },
+    { "icon": "framer", "alt": "Framer" },
+    { "icon": "linear", "alt": "Linear" },
+    { "icon": "notion", "alt": "Notion" },
+    { "icon": "trello", "alt": "Trello" },
+    { "icon": "asana", "alt": "Asana" },
+    { "icon": "clickup", "alt": "ClickUp" },
+    { "icon": "slack", "alt": "Slack" },
+    { "icon": "raycast", "alt": "Raycast" },
+    { "icon": "obsidian", "alt": "Obsidian" },
+    { "icon": "cursor", "alt": "Cursor" },
+    { "icon": "vscode", "alt": "VS Code" },
+    { "icon": "typescript", "alt": "TypeScript" },
+    { "icon": "react", "alt": "React" },
+    { "icon": "vite", "alt": "Vite" },
+    { "icon": "eslint", "alt": "ESLint" },
+    { "icon": "prettier", "alt": "Prettier" },
+    { "icon": "playwright", "alt": "Playwright" },
+    { "icon": "github-actions", "alt": "GitHub Actions" },
+    { "icon": "gitlab", "alt": "GitLab" }
+  ],
+  "caseStudy": [
+    {
+      "type": "text",
+      "content": "BlinkDo is designed to help busy people manage their tasks efficiently with a clean, intuitive interface. The app focuses on reducing cognitive load while maximizing productivity through smart task organization and visual feedback."
+    },
+    {
+      "type": "image",
+      "src": "media/projects/blinkdo.png",
+      "alt": "BlinkDo main dashboard view"
+    },
+    {
+      "type": "text",
+      "content": "The design process started with extensive user research to understand the pain points of existing productivity tools. Users often felt overwhelmed by complex interfaces and struggled to maintain consistent usage patterns."
+    },
+    {
+      "type": "video",
+      "videoId": "dQw4w9WgXcQ"
+    },
+    {
+      "type": "figma",
+      "url": "https://www.figma.com/file/abc123"
+    },
+    {
+      "type": "text",
+      "content": "Key features include smart task categorization, progress visualization, and seamless cross-device synchronization. The minimalist design philosophy ensures users can focus on what matters most - getting things done."
+    }
+  ]
+}

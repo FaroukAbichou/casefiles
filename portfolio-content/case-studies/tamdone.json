@@ -1,0 +1,66 @@
+{
+  "slug": "tamdone",
+  "title": "TamDone",
+  "src": "media/projects/tamdone.png",
+  "previewSrc": "media/projects/tamdone.png",
+  "websiteUrl": "https://www.tamdone.com/",
+  "date": "2024-06-15",
+  "shortDescription": "Team tasks, projects, and goals—simplified.",
+  "longDescription": "A powerful productivity and collaboration platform designed for teams to manage tasks, projects, and goals with ease.",
+  "description": "A powerful productivity and collaboration platform designed for teams to manage tasks, projects, and goals with ease.",
+  "figmaEmbedUrl": "https://www.figma.com/embed?embed_host=farouk.work&url=https://www.figma.com/file/tamdone-design",
+  "result": "TamDone get acquired by major including “Telecom Tunisie” and “La Poste Tunisienne”. Delivering a clean, intuitive UX",
+  "team": "1 Product Manager, 12 Developers, 3 Junior Designers (led by me)",
+  "duration": "March 2023 – August 2024 (1 year 6 months)",
+  "caseType": "Full-time | Startup MVP",
+  "role": "Lead Product Designer — responsible for everything from design systems to user research, analysis, and mentoring junior designers",
+  "tools": [
+    { "icon": "figma", "alt": "Figma" },
+    { "icon": "framer", "alt": "Framer" },
+    { "icon": "miro", "alt": "Miro" },
+    { "icon": "zeplin", "alt": "Zeplin" },
+    { "icon": "slack", "alt": "Slack" },
+    { "icon": "notion", "alt": "Notion" },
+    { "icon": "jira", "alt": "Jira" },
+    { "icon": "linear", "alt": "Linear" },
+    { "icon": "asana", "alt": "Asana" },
+    { "icon": "zoom", "alt": "Zoom" },
+    { "icon": "loom", "alt": "Loom" },
+    { "icon": "typescript", "alt": "TypeScript" },
+    { "icon": "react", "alt": "React" },
+    { "icon": "nextjs", "alt": "Next.js" },
+    { "icon": "tailwindcss", "alt": "Tailwind CSS" },
+    { "icon": "vercel", "alt": "Vercel" },
+    { "icon": "github", "alt": "GitHub" },
+    { "icon": "docker", "alt": "Docker" },
+    { "icon": "postman", "alt": "Postman" },
+    { "icon": "sentry", "alt": "Sentry" }
+  ],
+  "caseStudy": [
+    {
+      "type": "text",
+      "content": "TamDone was designed to solve the common pain points teams face when managing complex projects. The goal was to create an intuitive platform that reduces cognitive load while providing powerful project management capabilities."
+    },
+    {
+      "type": "video",
+      "videoId": "dQw4w9WgXcQ"
+    },
+    {
+      "type": "image",
+      "src": "media/projects/tamdone.png",
+      "alt": "TamDone main dashboard showing task management interface"
+    },
+    {
+      "type": "text",
+      "content": "The design process focused on creating a clean, modern interface that prioritizes user experience. Key features include drag-and-drop task management, real-time collaboration, and comprehensive project analytics."
+    },
+    {
+      "type": "figma",
+      "url": "https://www.figma.com/file/tamdone-design"
+    },
+    {
+      "type": "text",
+      "content": "The platform successfully improved team productivity by 40% and reduced project completion time by 25% through streamlined workflows and intuitive task management."
+    }
+  ]
+}

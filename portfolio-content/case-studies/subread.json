@@ -1,0 +1,126 @@
+{
+  "slug": "subread",
+  "title": "Subread",
+  "date": "2026-03-26",
+  "src": "media/projects/subread.png",
+  "previewSrc": "media/projects/subread.png",
+  "websiteUrl": "https://farouk.work/projects/subread",
+  "shortDescription": "One place to read newsletters and subs.",
+  "longDescription": "A unified reading platform for newsletters and subscriptions—built for faster discovery, better saves, and focused sessions.",
+  "description": "A Unified Platform for Newsletter & Subscription Reading",
+  "figmaEmbedUrl": "",
+  "result": "Made reading sessions more consistent by reducing switching friction.",
+  "team": "1 Product Designer, 2 Developers",
+  "duration": "6 weeks",
+  "caseType": "Concept Case Study",
+  "role": "Product Designer",
+  "tools": [
+    { "icon": "figma", "alt": "Figma" },
+    { "icon": "notion", "alt": "Notion" },
+    { "icon": "readwise", "alt": "Readwise" },
+    { "icon": "rss", "alt": "RSS" },
+    { "icon": "substack", "alt": "Substack" },
+    { "icon": "ghost", "alt": "Ghost" },
+    { "icon": "medium", "alt": "Medium" },
+    { "icon": "contentful", "alt": "Contentful" },
+    { "icon": "sanity", "alt": "Sanity" },
+    { "icon": "vite", "alt": "Vite" },
+    { "icon": "typescript", "alt": "TypeScript" },
+    { "icon": "react", "alt": "React" },
+    { "icon": "nextjs", "alt": "Next.js" },
+    { "icon": "tailwindcss", "alt": "Tailwind CSS" },
+    { "icon": "vercel", "alt": "Vercel" },
+    { "icon": "cloudflare", "alt": "Cloudflare" },
+    { "icon": "eslint", "alt": "ESLint" },
+    { "icon": "playwright", "alt": "Playwright" }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "A modern reading experience for subscribers: faster discovery, better saves, and an interface designed around focus."
+        }
+      ]
+    },
+    {
+      "id": "tl-dr-summary",
+      "title": "TL;DR Summary",
+      "blocks": [
+        {
+          "type": "bulletList",
+          "items": [
+            "Problem: subscription reading was fragmented and hard to track",
+            "Approach: a unified layout + smart organization",
+            "Result: less friction, more consistent reading sessions"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "role-process",
+      "title": "Role & Process",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "I led the design from concept to validation: aligning stakeholders, defining the workflow, iterating on information hierarchy, and validating with representative readers."
+        }
+      ]
+    },
+    {
+      "id": "visual-showcase",
+      "title": "Visual Showcase",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Add screenshots / annotated screens here (dashboard, reading view, save flow)."
+        },
+        {
+          "type": "video",
+          "videoId": "dQw4w9WgXcQ"
+        }
+      ]
+    },
+    {
+      "id": "design-decisions",
+      "title": "Design Decisions",
+      "blocks": [
+        {
+          "type": "quote",
+          "content": "Stay scannable. Keep it honest."
+        },
+        {
+          "type": "bulletList",
+          "items": [
+            "Challenge → Context → Decision: each section explains why we chose the approach",
+            "Information hierarchy that prioritizes what readers need in under 5 seconds",
+            "Micro-interactions that reinforce momentum (without visual noise)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "outcomes-impact",
+      "title": "Outcomes & Impact",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Outcome & Impact: reduce time-to-start reading, improve save rates, and make subscriptions feel cohesive."
+        }
+      ]
+    },
+    {
+      "id": "reflection",
+      "title": "Reflection",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Learnings: what worked, what didn’t, and what I’d iterate next (e.g., personalization + tighter editorial controls)."
+        }
+      ]
+    }
+  ]
+}
+

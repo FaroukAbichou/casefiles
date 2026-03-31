@@ -1,0 +1,64 @@
+{
+  "slug": "takikids",
+  "title": "TakiKids",
+  "src": "media/projects/takikids.png",
+  "previewSrc": "media/projects/takikids.png",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.takiacademy.takiacademykids",
+  "date": "2024-07-20",
+  "shortDescription": "Playful learning games for kids ages 5–12.",
+  "longDescription": "An educational gaming app that helps kids learn school subjects through fun puzzles, stories, and progress tracking.",
+  "description": "An educational gaming app that helps kids learn school subjects through fun puzzles, stories, and progress tracking.",
+  "figmaEmbedUrl": "https://www.figma.com/embed?embed_host=farouk.work&url=https://www.figma.com/file/takikids-design",
+  "result": "Improved lesson completion rates through playful progression.",
+  "team": "1 Product Designer, 2 Educators, 2 Developers",
+  "duration": "11 weeks",
+  "caseType": "EdTech App",
+  "role": "Product Designer",
+  "tools": [
+    { "icon": "illustrator", "alt": "Adobe Illustrator" },
+    { "icon": "photoshop", "alt": "Adobe Photoshop" },
+    { "icon": "aftereffects", "alt": "After Effects" },
+    { "icon": "figma", "alt": "Figma" },
+    { "icon": "canva", "alt": "Canva" },
+    { "icon": "blender", "alt": "Blender" },
+    { "icon": "unity", "alt": "Unity" },
+    { "icon": "flutter", "alt": "Flutter" },
+    { "icon": "dart", "alt": "Dart" },
+    { "icon": "android", "alt": "Android" },
+    { "icon": "swift", "alt": "Swift" },
+    { "icon": "kotlin", "alt": "Kotlin" },
+    { "icon": "xcode", "alt": "Xcode" },
+    { "icon": "firebase", "alt": "Firebase" },
+    { "icon": "react", "alt": "React" },
+    { "icon": "typescript", "alt": "TypeScript" },
+    { "icon": "vite", "alt": "Vite" },
+    { "icon": "jest", "alt": "Jest" }
+  ],
+  "caseStudy": [
+    {
+      "type": "text",
+      "content": "TakiKids was created to make learning engaging and fun for children aged 5-12. The platform combines gamification principles with educational content to create an immersive learning experience that keeps kids motivated and excited about learning."
+    },
+    {
+      "type": "image",
+      "src": "media/projects/takikids.png",
+      "alt": "TakiKids learning interface with colorful educational games"
+    },
+    {
+      "type": "text",
+      "content": "The design process involved working closely with educators and child psychologists to understand how children learn best. We focused on creating bright, engaging visuals that appeal to children while maintaining educational value and parental controls."
+    },
+    {
+      "type": "video",
+      "videoId": "dQw4w9WgXcQ"
+    },
+    {
+      "type": "figma",
+      "url": "https://www.figma.com/file/takikids-design"
+    },
+    {
+      "type": "text",
+      "content": "The app features adaptive learning algorithms, progress tracking for parents, multiplayer educational games, and a comprehensive curriculum covering math, science, language arts, and social studies. Over 50,000 students have improved their academic performance using TakiKids."
+    }
+  ]
+}

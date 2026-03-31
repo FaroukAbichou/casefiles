@@ -1,0 +1,36 @@
+{
+  "articles": [
+    {
+      "id": "article-2",
+      "title": "Stop trusting the process.",
+      "url": "https://www.linkedin.com/posts/faroukabichou_stop-trusting-the-process-if-the-process-activity-7333867355636207616-frvh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD8lAMoBQn2nzKeuFZ_kH9TxFPWOIxbGdwg",
+      "readTime": "4 m",
+      "date": "Jul 04, 2025",
+      "description": "Tips and tricks for optimizing UI performance in modern web apps."
+    },
+    {
+      "id": "article-3",
+      "title": "Design is dead. No. You just never knew what it was.",
+      "url": "https://www.linkedin.com/posts/faroukabichou_designisnotdead-hottake-designtwitter-activity-7328324834407456768-LBfU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD8lAMoBQn2nzKeuFZ_kH9TxFPWOIxbGdwg",
+      "readTime": "1 m",
+      "date": "Jun 24, 2025",
+      "description": "Reflections on integrating AI tools into daily design and development."
+    },
+    {
+      "id": "article-1",
+      "title": "Are you a Figma user... or are you a designer?",
+      "url": "https://www.linkedin.com/posts/faroukabichou_uxdesign-designthinking-productdesign-activity-7327595939051761664-6juT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD8lAMoBQn2nzKeuFZ_kH9TxFPWOIxbGdwg",
+      "readTime": "2 m",
+      "date": "May 30, 2025",
+      "description": "A guide to balancing design and engineering mindsets in product development."
+    },
+    {
+      "id": "article-4",
+      "title": "AI is rapidly transforming the way we design",
+      "url": "https://www.linkedin.com/posts/faroukabichou_ai-activity-7325963020470214656-_0Gt?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD8lAMoBQn2nzKeuFZ_kH9TxFPWOIxbGdwg",
+      "readTime": "1 m",
+      "date": "May 07, 2025",
+      "description": "An introduction to design tokens and their role in scalable design systems."
+    }
+  ]
+}
