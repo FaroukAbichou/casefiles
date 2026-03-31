@@ -14,11 +14,13 @@ Single source of truth for portfolio **site copy**, **case studies**, **writing 
 | `media/site/` | Site-wide assets: `icons/`, `brand/`, `people/`, `education/`, `experience/`, root SVGs like `softylines.svg` |
 | `media/marketing/banners/` | Open Graph / social preview images (referenced from the Next app) |
 | `media/documents/` | CV and resume PDFs (`cv-product-designer-*.pdf`, `resume-*.pdf`) |
+| `media/tools/` | Case study tool strip: `{icon}-light.svg` and `{icon}-dark.svg` per `tools[].icon` in case study JSON. Regenerate from the Next repo: `npm run sync-tool-icons`. |
 
 ## After you edit content
 
 1. Commit and push this repo (`casefiles`).
 2. Sync the Next app fallback (used if GitHub is slow or 404): copy `site/site.json` → `farouk.work/app/home/data/site.fallback.json`.
+3. After adding or renaming `tools[].icon` entries, run `npm run sync-tool-icons` in `farouk.work` (writes into this repo’s `media/tools/`).
 
 ## URL rules in JSON
 
