@@ -2,8 +2,8 @@
   "slug": "ecoquest",
   "title": "EcoQuest",
   "date": "2024-12-01",
-  "src": "media/projects/ecoquest.png",
-  "previewSrc": "media/projects/ecoquest.png",
+  "src": "case-studies/ecoquest/assets/ecoquest.png",
+  "previewSrc": "case-studies/ecoquest/assets/ecoquest.png",
   "websiteUrl": "https://farouk.work/projects/ecoquest",
   "shortDescription": "Track impact and choose sustainable options.",
   "longDescription": "An innovative app that helps users track their environmental impact and discover sustainable alternatives for everyday choices.",
@@ -103,7 +103,7 @@
     },
     {
       "type": "image",
-      "src": "media/projects/ecoquest.png",
+      "src": "case-studies/ecoquest/assets/ecoquest.png",
       "alt": "EcoQuest interface showing environmental impact tracking and sustainability tips"
     },
     {

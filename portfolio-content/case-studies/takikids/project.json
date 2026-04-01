@@ -1,8 +1,8 @@
 {
   "slug": "takikids",
   "title": "TakiKids",
-  "src": "media/projects/takikids.png",
-  "previewSrc": "media/projects/takikids.png",
+  "src": "case-studies/takikids/assets/takikids.png",
+  "previewSrc": "case-studies/takikids/assets/takikids.png",
   "playStoreUrl": "https://play.google.com/store/apps/details?id=com.takiacademy.takiacademykids",
   "date": "2024-07-20",
   "shortDescription": "Playful learning games for kids ages 5–12.",
@@ -95,7 +95,7 @@
     },
     {
       "type": "image",
-      "src": "media/projects/takikids.png",
+      "src": "case-studies/takikids/assets/takikids.png",
       "alt": "TakiKids learning interface with colorful educational games"
     },
     {

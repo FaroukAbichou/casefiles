@@ -1,8 +1,8 @@
 {
   "slug": "kotteb",
   "title": "Kotteb",
-  "src": "media/projects/kotteb.png",
-  "previewSrc": "media/projects/kotteb.png",
+  "src": "case-studies/kotteb/assets/kotteb.png",
+  "previewSrc": "case-studies/kotteb/assets/kotteb.png",
   "websiteUrl": "https://kotteb.com/",
   "playStoreUrl": "https://kotteb.com/#Download",
   "date": "2024-09-15",
@@ -634,7 +634,7 @@
       "blocks": [
         {
           "type": "image",
-          "src": "media/projects/kotteb.png",
+          "src": "case-studies/kotteb/assets/kotteb.png",
           "alt": "Kotteb main interface showing Quran reading and therapy features"
         },
         {

@@ -2,8 +2,8 @@
   "slug": "financeflow",
   "title": "FinanceFlow",
   "date": "2024-11-05",
-  "src": "media/projects/financeflow.png",
-  "previewSrc": "media/projects/financeflow.png",
+  "src": "case-studies/financeflow/assets/financeflow.png",
+  "previewSrc": "case-studies/financeflow/assets/financeflow.png",
   "websiteUrl": "https://farouk.work/projects/financeflow",
   "shortDescription": "Track spending, budgets, and goals fast.",
   "longDescription": "A comprehensive personal finance app that helps users track expenses, set budgets, and achieve their financial goals.",
@@ -103,7 +103,7 @@
     },
     {
       "type": "image",
-      "src": "media/projects/financeflow.png",
+      "src": "case-studies/financeflow/assets/financeflow.png",
       "alt": "FinanceFlow dashboard showing expense tracking and budget visualization"
     },
     {

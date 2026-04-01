@@ -1,8 +1,8 @@
 {
   "slug": "healu",
   "title": "Healu",
-  "src": "media/projects/image4.webp",
-  "previewSrc": "media/projects/image4.webp",
+  "src": "case-studies/healu/assets/image4.webp",
+  "previewSrc": "case-studies/healu/assets/image4.webp",
   "websiteUrl": "https://healutherapy.com/en",
   "date": "2024-05-10",
   "shortDescription": "Accessible online therapy and wellbeing support.",
@@ -99,7 +99,7 @@
     },
     {
       "type": "image",
-      "src": "media/projects/image4.webp",
+      "src": "case-studies/healu/assets/image4.webp",
       "alt": "Healu therapy platform interface with calming design"
     },
     {

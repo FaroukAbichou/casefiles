@@ -1,8 +1,8 @@
 {
   "slug": "tamdone",
   "title": "TamDone",
-  "src": "media/projects/tamdone.png",
-  "previewSrc": "media/projects/tamdone.png",
+  "src": "case-studies/tamdone/assets/tamdone.png",
+  "previewSrc": "case-studies/tamdone/assets/tamdone.png",
   "websiteUrl": "https://www.tamdone.com/",
   "date": "2024-06-15",
   "shortDescription": "Team tasks, projects, and goals—simplified.",
@@ -107,7 +107,7 @@
     },
     {
       "type": "image",
-      "src": "media/projects/tamdone.png",
+      "src": "case-studies/tamdone/assets/tamdone.png",
       "alt": "TamDone main dashboard showing task management interface"
     },
     {

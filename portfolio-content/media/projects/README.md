@@ -1,16 +1,13 @@
-# Project thumbnails & case study images
+# Project images (legacy path)
 
-Place raster assets here using **lowercase** names aligned with project slugs:
+Per-case-study images now live next to the JSON:
 
-| Slug | Suggested file |
-|------|----------------|
-| `tamdone` | `tamdone.png` |
-| `kotteb` | `kotteb.png` |
-| `takikids` | `takikids.png` |
-| `healu` | `healu.png` |
-| `blinkdo` | `blinkdo.png` |
-| `ecoquest` | `ecoquest.png` |
-| `financeflow` | `financeflow.png` |
-| `subread` | `subread.png` |
+`case-studies/<slug>/assets/`
 
-Reference them in JSON as `media/projects/<filename>`.
+Home `site.json` `projects[].image` and each `project.json` should use paths like:
+
+`case-studies/<slug>/assets/<filename>.png`
+
+## Unreferenced files
+
+Raster files that are not yet assigned to a project can sit under `unreferenced/` until you move them into the right `case-studies/<slug>/assets/` folder.

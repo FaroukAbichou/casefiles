@@ -2,8 +2,8 @@
   "slug": "blinkdo",
   "title": "BlinkDo",
   "date": "2025-08-01",
-  "src": "media/projects/image.webp",
-  "previewSrc": "media/projects/blinkdo.png",
+  "src": "case-studies/blinkdo/assets/image.webp",
+  "previewSrc": "case-studies/blinkdo/assets/blinkdo.png",
   "websiteUrl": "https://farouk.work/projects/blinkdo",
   "shortDescription": "Minimal task management for busy days.",
   "longDescription": "A sleek productivity app for task management that keeps focus high and friction low across your day-to-day planning.",
@@ -103,7 +103,7 @@
     },
     {
       "type": "image",
-      "src": "media/projects/image.webp",
+      "src": "case-studies/blinkdo/assets/image.webp",
       "alt": "BlinkDo main dashboard view"
     },
     {
