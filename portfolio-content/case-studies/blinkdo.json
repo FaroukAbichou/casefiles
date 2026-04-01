@@ -2,7 +2,7 @@
   "slug": "blinkdo",
   "title": "BlinkDo",
   "date": "2025-08-01",
-  "src": "media/projects/blinkdo.png",
+  "src": "media/projects/image.webp",
   "previewSrc": "media/projects/blinkdo.png",
   "websiteUrl": "https://farouk.work/projects/blinkdo",
   "shortDescription": "Minimal task management for busy days.",
@@ -103,7 +103,7 @@
     },
     {
       "type": "image",
-      "src": "media/projects/blinkdo.png",
+      "src": "media/projects/image.webp",
       "alt": "BlinkDo main dashboard view"
     },
     {
