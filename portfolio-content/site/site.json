@@ -23,7 +23,7 @@
     },
     "email": "Hello@farouk.work",
     "emailCopyTooltip": "Press c to copy my email",
-    "profileImage": "https://picsum.photos/seed/farouk-profile/256/256",
+    "profileImage": "media/site/people/farouk-abichou.png",
     "keyboardShortcuts": {
       "copyEmail": "c"
     },

@@ -1,0 +1,131 @@
+{
+  "slug": "ecoquest",
+  "title": "EcoQuest",
+  "date": "2024-12-01",
+  "src": "media/projects/image2.webp",
+  "previewSrc": "media/projects/ecoquest.png",
+  "websiteUrl": "https://farouk.work/projects/ecoquest",
+  "shortDescription": "Track impact and choose sustainable options.",
+  "longDescription": "An innovative app that helps users track their environmental impact and discover sustainable alternatives for everyday choices.",
+  "description": "An innovative app that helps users track their environmental impact and discover sustainable alternatives for everyday choices.",
+  "figmaEmbedUrl": "https://www.figma.com/embed?embed_host=farouk.work&url=https://www.figma.com/file/ecoquest-design",
+  "result": "Users reported clearer daily sustainability actions and better habit retention.",
+  "team": "1 Product Designer, 1 Researcher, 2 Developers",
+  "duration": "10 weeks",
+  "caseType": "Mobile App Redesign",
+  "role": "Lead Product Designer",
+  "tools": [
+    {
+      "icon": "figma",
+      "alt": "Figma"
+    },
+    {
+      "icon": "penpot",
+      "alt": "Penpot"
+    },
+    {
+      "icon": "notion",
+      "alt": "Notion"
+    },
+    {
+      "icon": "miro",
+      "alt": "Miro"
+    },
+    {
+      "icon": "mapbox",
+      "alt": "Mapbox"
+    },
+    {
+      "icon": "slack",
+      "alt": "Slack"
+    },
+    {
+      "icon": "linear",
+      "alt": "Linear"
+    },
+    {
+      "icon": "typescript",
+      "alt": "TypeScript"
+    },
+    {
+      "icon": "react",
+      "alt": "React"
+    },
+    {
+      "icon": "nextjs",
+      "alt": "Next.js"
+    },
+    {
+      "icon": "graphql",
+      "alt": "GraphQL"
+    },
+    {
+      "icon": "prisma",
+      "alt": "Prisma"
+    },
+    {
+      "icon": "postgres",
+      "alt": "PostgreSQL"
+    },
+    {
+      "icon": "terraform",
+      "alt": "Terraform"
+    },
+    {
+      "icon": "aws",
+      "alt": "AWS"
+    },
+    {
+      "icon": "docker",
+      "alt": "Docker"
+    },
+    {
+      "icon": "kubernetes",
+      "alt": "Kubernetes"
+    },
+    {
+      "icon": "databricks",
+      "alt": "Databricks"
+    },
+    {
+      "icon": "snowflake",
+      "alt": "Snowflake"
+    },
+    {
+      "icon": "grafana",
+      "alt": "Grafana"
+    }
+  ],
+  "caseStudy": [
+    {
+      "type": "text",
+      "content": "EcoQuest was created to make environmental consciousness accessible and engaging. The app gamifies sustainable living by helping users understand their carbon footprint and providing actionable steps to reduce their environmental impact."
+    },
+    {
+      "type": "image",
+      "src": "media/projects/image2.webp",
+      "alt": "EcoQuest interface showing environmental impact tracking and sustainability tips"
+    },
+    {
+      "type": "text",
+      "content": "The design process emphasized creating a positive, encouraging interface that motivates users to make sustainable choices without feeling overwhelmed or guilty. We used nature-inspired colors and organic design elements to reinforce the environmental theme."
+    },
+    {
+      "type": "video",
+      "videoId": "dQw4w9WgXcQ"
+    },
+    {
+      "type": "figma",
+      "url": "https://www.figma.com/file/ecoquest-design"
+    },
+    {
+      "type": "text",
+      "content": "Key features include carbon footprint tracking, sustainable product recommendations, community challenges, environmental education content, and integration with local sustainability initiatives. The app has helped users reduce their carbon footprint by an average of 35%."
+    }
+  ],
+  "relatedProjects": [
+    "financeflow",
+    "blinkdo",
+    "subread"
+  ]
+}
