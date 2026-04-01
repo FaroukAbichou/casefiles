@@ -125,7 +125,13 @@
         "Improved user experience and reduced load times through performance-focused design",
         "Led collaboration between designers, engineers, and PMs to align business goals with usability"
       ],
-      "techUsed": ["Figma", "React", "Framer Motion", "TypeScript", "Tailwind CSS"],
+      "techUsed": [
+        "Figma",
+        "React",
+        "Framer Motion",
+        "TypeScript",
+        "Tailwind CSS"
+      ],
       "keywords": [
         "enterprise UX",
         "admin dashboard design",
@@ -158,8 +164,23 @@
         "Maintained WCAG 2.1 accessibility compliance in all educational material and student projects",
         "Refactored legacy design templates into a modular and scalable UI system"
       ],
-      "techUsed": ["Figma", "Miro", "Kahoot", "FigJam", "Zoom"],
-      "keywords": ["UX design", "UI design", "accessibility", "WCAG", "crypto UI", "online teaching", "Figma instructor", "remote UX education"],
+      "techUsed": [
+        "Figma",
+        "Miro",
+        "Kahoot",
+        "FigJam",
+        "Zoom"
+      ],
+      "keywords": [
+        "UX design",
+        "UI design",
+        "accessibility",
+        "WCAG",
+        "crypto UI",
+        "online teaching",
+        "Figma instructor",
+        "remote UX education"
+      ],
       "thumbnail": "media/site/experience/softyskills-education-thumbnail.png",
       "logo": "media/site/softyskills-logo.svg",
       "links": {
@@ -195,23 +216,6 @@
     }
   ],
   "testimonials": [
-    {
-      "id": "Jia Rui Ong",
-      "quote": "Farouk did a great job designing a new mobile app, with final delivery in Figma. Communication was good and he was able to work independently after the initial project and task description. Feedback was incorporated promptly and accurately. Final work had a professional look to it and wowed initial users.",
-      "author": {
-        "name": "Jia Rui Ong",
-        "title": "Software Engineer",
-        "company": "Google",
-        "avatar": "https://picsum.photos/seed/jiaruiong/200/200",
-        "linkedin": "https://www.linkedin.com/in/jiaruiong/",
-        "companyUrl": "https://www.linkedin.com/in/jiaruiong/",
-        "companyLogo": "https://logo.clearbit.com/google.com"
-      },
-      "relatedProjectId": "portfolio-redesign-2025",
-      "date": "May 2025",
-      "verified": true,
-      "featured": true
-    },
     {
       "id": "Avish Jain",
       "quote": "Farouk was incredible UX UI designer to work with. He delivered way beyond the initial scope, completing the full MVP design with a clean, scalable system ready for development,and even finished ahead of schedule. Communication was smooth, and his design thinking and execution were top-notch. Would definitely recommend him for any serious UX UI work.",
@@ -260,7 +264,11 @@
       "certificateUrl": "https://coursera.org/verify/example",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg",
       "badgeImage": "media/site/icons/badge.svg",
-      "tags": ["React", "Frontend", "JavaScript"],
+      "tags": [
+        "React",
+        "Frontend",
+        "JavaScript"
+      ],
       "featured": true
     },
     {
@@ -275,7 +283,11 @@
       "certificateUrl": "https://coursera.org/verify/example",
       "logo": "",
       "badgeImage": "media/site/icons/badge.svg",
-      "tags": ["React", "Frontend", "JavaScript"],
+      "tags": [
+        "React",
+        "Frontend",
+        "JavaScript"
+      ],
       "featured": true
     }
   ],
@@ -289,7 +301,12 @@
       "date": "2024-04-10",
       "description": "A detailed walkthrough of my UI/UX design projects.",
       "platform": "YouTube",
-      "tags": ["UI/UX", "portfolio", "design", "walkthrough"]
+      "tags": [
+        "UI/UX",
+        "portfolio",
+        "design",
+        "walkthrough"
+      ]
     },
     {
       "id": "media2",
@@ -300,7 +317,11 @@
       "date": "2024-02-20",
       "description": "Discussing design thinking principles in modern apps.",
       "platform": "Spotify",
-      "tags": ["interview", "design thinking", "UX"]
+      "tags": [
+        "interview",
+        "design thinking",
+        "UX"
+      ]
     },
     {
       "id": "media3",
@@ -310,11 +331,17 @@
       "date": "May 12, 2025",
       "description": "An article explaining how color theory improves user experience.",
       "platform": "Medium",
-      "tags": ["color theory", "UX", "article"]
+      "tags": [
+        "color theory",
+        "UX",
+        "article"
+      ]
     }
   ],
   "personal": {
-    "hobbies": ["photography"],
+    "hobbies": [
+      "photography"
+    ],
     "camera": "Sony a6400",
     "photos": [
       {

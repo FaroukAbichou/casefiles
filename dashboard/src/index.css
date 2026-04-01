@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border-subtle;
+  }
+  body {
+    @apply bg-surface text-brand min-h-screen;
+  }
+}
+
+@layer components {
+  .input-base {
+    @apply rounded-lg border border-border-subtle bg-surface-overlay px-3 py-2 text-brand placeholder:text-brand-dim/60 outline-none transition-colors focus:border-accent-muted focus:ring-1 focus:ring-accent-muted/40;
+  }
+}
