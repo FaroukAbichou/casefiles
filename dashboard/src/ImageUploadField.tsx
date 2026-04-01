@@ -55,16 +55,16 @@ export default function ImageUploadField({
 
   return (
     <div className="flex flex-col gap-2">
-      <span className="text-xs font-medium uppercase tracking-wider text-brand-dim">{label}</span>
+      <span className="text-xs font-medium text-muted-foreground">{label}</span>
       {src ? (
-        <div className="overflow-hidden rounded-lg border border-border-subtle bg-surface-overlay">
+        <div className="overflow-hidden rounded-md border bg-muted/30">
           <img src={src} alt="" className="max-h-44 w-full object-contain object-left" />
         </div>
       ) : null}
       <div
         {...getRootProps()}
-        className={`rounded-lg border border-dashed border-border-subtle px-4 py-5 text-center text-sm text-brand-dim transition-colors ${
-          isDragActive ? "border-accent-muted bg-surface-overlay" : "hover:border-accent-muted/50"
+        className={`rounded-md border border-dashed border-border px-4 py-5 text-center text-sm text-muted-foreground transition-colors ${
+          isDragActive ? "border-primary bg-muted" : "hover:border-primary/50"
         } ${busy || blocked ? "cursor-not-allowed opacity-45" : "cursor-pointer"}`}
       >
         <input {...getInputProps()} />
@@ -87,13 +87,13 @@ export default function ImageUploadField({
           <button
             type="button"
             onClick={() => onChange("")}
-            className="shrink-0 rounded-lg px-2 py-1 text-xs text-brand-dim hover:bg-surface-overlay hover:text-brand"
+            className="shrink-0 rounded-md px-2 py-1 text-xs text-muted-foreground hover:bg-accent hover:text-foreground"
           >
             Clear
           </button>
         ) : null}
       </div>
-      {err ? <p className="text-xs text-red-300">{err}</p> : null}
+      {err ? <p className="text-xs text-destructive">{err}</p> : null}
     </div>
   );
 }

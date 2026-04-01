@@ -175,13 +175,13 @@ export default function CaseStudyEditor({ slug, summary, onClose, onSaved }: Pro
       aria-modal="true"
       aria-labelledby="editor-title"
     >
-      <div className="flex w-full max-w-3xl flex-col rounded-xl border border-border-subtle bg-surface-raised shadow-2xl transition-transform duration-300 ease-out">
-        <header className="flex items-center justify-between gap-3 border-b border-border-subtle px-5 py-4">
+      <div className="flex w-full max-w-3xl flex-col rounded-xl border border-border bg-card shadow-2xl transition-transform duration-300 ease-out">
+        <header className="flex items-center justify-between gap-3 border-b border-border px-5 py-4">
           <div>
             <h2 id="editor-title" className="text-lg font-semibold tracking-tight">
               {title || slug}
             </h2>
-            <p className="font-mono text-xs text-brand-dim">
+            <p className="font-mono text-xs text-muted-foreground">
               {slug}
               {summary?.storage ? ` · ${summary.storage}` : ""}
               {summary?.missing ? " · missing file" : ""}
@@ -190,7 +190,7 @@ export default function CaseStudyEditor({ slug, summary, onClose, onSaved }: Pro
           <button
             type="button"
             onClick={onClose}
-            className="rounded-lg px-3 py-1.5 text-sm text-brand-dim hover:bg-surface-overlay hover:text-brand"
+            className="rounded-lg px-3 py-1.5 text-sm text-muted-foreground hover:bg-accent hover:text-foreground"
           >
             Close
           </button>
@@ -198,11 +198,11 @@ export default function CaseStudyEditor({ slug, summary, onClose, onSaved }: Pro
 
         <div className="min-h-0 flex-1 overflow-y-auto px-5 py-4">
           {loading ? (
-            <p className="text-sm text-brand-dim">Loading…</p>
+            <p className="text-sm text-muted-foreground">Loading…</p>
           ) : (
             <div className="flex flex-col gap-6">
               {error ? (
-                <p className="rounded-lg border border-red-900/50 bg-red-950/30 px-3 py-2 text-sm text-red-200">
+                <p className="rounded-md border border-destructive/30 bg-destructive/10 px-3 py-2 text-sm text-destructive">
                   {error}
                 </p>
               ) : null}
@@ -257,13 +257,13 @@ export default function CaseStudyEditor({ slug, summary, onClose, onSaved }: Pro
 
               <section>
                 <div className="mb-2 flex items-center justify-between">
-                  <span className="text-xs font-medium uppercase tracking-wider text-brand-dim">
+                  <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
                     Tools
                   </span>
                   <button
                     type="button"
                     onClick={addTool}
-                    className="text-xs text-accent-muted hover:text-brand"
+                    className="text-xs text-muted-foreground hover:text-foreground"
                   >
                     + Add tool
                   </button>
@@ -286,7 +286,7 @@ export default function CaseStudyEditor({ slug, summary, onClose, onSaved }: Pro
                       <button
                         type="button"
                         onClick={() => removeTool(i)}
-                        className="rounded-lg px-2 text-brand-dim hover:bg-surface-overlay hover:text-brand"
+                        className="rounded-lg px-2 text-muted-foreground hover:bg-accent hover:text-foreground"
                         aria-label="Remove tool"
                       >
                         ×
@@ -297,7 +297,7 @@ export default function CaseStudyEditor({ slug, summary, onClose, onSaved }: Pro
               </section>
 
               <section>
-                <label className="mb-1 block text-xs font-medium uppercase tracking-wider text-brand-dim">
+                <label className="mb-1 block text-xs font-medium uppercase tracking-wider text-muted-foreground">
                   Related projects (comma-separated slugs)
                 </label>
                 <input
@@ -310,7 +310,7 @@ export default function CaseStudyEditor({ slug, summary, onClose, onSaved }: Pro
 
               <section>
                 <div className="mb-1 flex items-center justify-between">
-                  <label className="text-xs font-medium uppercase tracking-wider text-brand-dim">
+                  <label className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
                     caseStudy blocks (JSON array)
                   </label>
                   <button
@@ -324,7 +324,7 @@ export default function CaseStudyEditor({ slug, summary, onClose, onSaved }: Pro
                         setCaseStudyErr(e instanceof Error ? e.message : "Invalid");
                       }
                     }}
-                    className="text-xs text-accent-muted hover:text-brand"
+                    className="text-xs text-muted-foreground hover:text-foreground"
                   >
                     Format
                   </button>
@@ -337,18 +337,18 @@ export default function CaseStudyEditor({ slug, summary, onClose, onSaved }: Pro
                   spellCheck={false}
                 />
                 {caseStudyErr ? (
-                  <p className="mt-1 text-xs text-red-300">{caseStudyErr}</p>
+                  <p className="mt-1 text-xs text-destructive">{caseStudyErr}</p>
                 ) : null}
               </section>
             </div>
           )}
         </div>
 
-        <footer className="flex justify-end gap-2 border-t border-border-subtle px-5 py-4">
+        <footer className="flex justify-end gap-2 border-t border-border px-5 py-4">
           <button
             type="button"
             onClick={onClose}
-            className="rounded-lg border border-border-subtle px-4 py-2 text-sm hover:bg-surface-overlay"
+            className="inline-flex h-9 items-center rounded-md border border-input bg-background px-4 text-sm hover:bg-accent"
           >
             Cancel
           </button>
@@ -356,7 +356,7 @@ export default function CaseStudyEditor({ slug, summary, onClose, onSaved }: Pro
             type="button"
             disabled={loading || saving}
             onClick={handleSave}
-            className="rounded-lg bg-brand px-4 py-2 text-sm font-medium text-surface hover:bg-accent-muted disabled:opacity-40"
+            className="inline-flex h-9 items-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow hover:bg-primary/90 disabled:opacity-40"
           >
             {saving ? "Saving…" : "Save"}
           </button>
@@ -379,7 +379,7 @@ function Field({
 }) {
   return (
     <label className={`flex flex-col gap-1 ${className}`}>
-      <span className="text-xs font-medium uppercase tracking-wider text-brand-dim">{label}</span>
+      <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">{label}</span>
       <input
         value={value}
         onChange={(e) => onChange(e.target.value)}
@@ -400,7 +400,7 @@ function Area({
 }) {
   return (
     <label className="flex flex-col gap-1">
-      <span className="text-xs font-medium uppercase tracking-wider text-brand-dim">{label}</span>
+      <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">{label}</span>
       <textarea
         value={value}
         onChange={(e) => onChange(e.target.value)}

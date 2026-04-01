@@ -1,4 +1,7 @@
 import { useState, type ReactNode } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { cn } from "@/lib/utils";
 
 export function Modal({
   title,
@@ -18,16 +21,17 @@ export function Modal({
       aria-modal="true"
     >
       <div
-        className={`max-h-[90vh] w-full overflow-hidden rounded-xl border border-border-subtle bg-surface-raised shadow-xl ${
+        className={cn(
+          "max-h-[90vh] w-full overflow-hidden rounded-xl border bg-card text-card-foreground shadow-lg",
           wide ? "max-w-3xl" : "max-w-lg"
-        }`}
+        )}
       >
-        <div className="flex items-center justify-between border-b border-border-subtle px-5 py-3">
+        <div className="flex items-center justify-between border-b px-5 py-3">
           <h2 className="text-lg font-semibold">{title}</h2>
           <button
             type="button"
             onClick={onClose}
-            className="rounded-lg px-2 py-1 text-brand-dim hover:bg-surface-overlay hover:text-brand"
+            className="rounded-md px-2 py-1 text-muted-foreground hover:bg-accent hover:text-foreground"
           >
             ×
           </button>
@@ -56,17 +60,14 @@ export function ConfirmModal({
   const [busy, setBusy] = useState(false);
   return (
     <Modal title={title} onClose={onCancel}>
-      <p className="text-sm text-brand-dim">{body}</p>
+      <p className="text-sm text-muted-foreground">{body}</p>
       <div className="mt-6 flex justify-end gap-2">
-        <button
-          type="button"
-          onClick={onCancel}
-          className="rounded-lg border border-border-subtle px-4 py-2 text-sm hover:bg-surface-overlay"
-        >
+        <Button type="button" variant="outline" onClick={onCancel}>
           Cancel
-        </button>
-        <button
+        </Button>
+        <Button
           type="button"
+          variant={danger ? "destructive" : "default"}
           disabled={busy}
           onClick={async () => {
             setBusy(true);
@@ -76,14 +77,9 @@ export function ConfirmModal({
               setBusy(false);
             }
           }}
-          className={`rounded-lg px-4 py-2 text-sm font-medium ${
-            danger
-              ? "bg-red-900 text-white hover:bg-red-800"
-              : "bg-brand text-surface hover:bg-accent-muted"
-          } disabled:opacity-40`}
         >
           {busy ? "…" : confirmLabel}
-        </button>
+        </Button>
       </div>
     </Modal>
   );
@@ -96,6 +92,7 @@ export function FormField({
   mono,
   disabled,
   placeholder,
+  autoFocus,
 }: {
   label: string;
   value: string;
@@ -103,16 +100,18 @@ export function FormField({
   mono?: boolean;
   disabled?: boolean;
   placeholder?: string;
+  autoFocus?: boolean;
 }) {
   return (
-    <label className="flex flex-col gap-1">
-      <span className="text-xs font-medium uppercase tracking-wider text-brand-dim">{label}</span>
-      <input
+    <label className="flex flex-col gap-1.5">
+      <span className="text-xs font-medium text-muted-foreground">{label}</span>
+      <Input
         value={value}
         disabled={disabled}
         placeholder={placeholder}
+        autoFocus={autoFocus}
         onChange={(e) => onChange(e.target.value)}
-        className={`input-base text-sm ${mono ? "font-mono" : ""}`}
+        className={mono ? "font-mono text-sm" : ""}
       />
     </label>
   );

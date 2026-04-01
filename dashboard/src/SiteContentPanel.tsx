@@ -9,7 +9,7 @@ import {
 import ImageUploadField from "./ImageUploadField";
 import { ConfirmModal, FormField, Modal } from "./ui";
 
-type Sub = "testimonials" | "experience" | "education";
+export type SiteSection = "testimonials" | "experience" | "education";
 
 function asStr(v: unknown): string {
   return typeof v === "string" ? v : "";
@@ -228,8 +228,13 @@ function educationFromUnknown(x: unknown): Education {
   };
 }
 
-export default function SiteContentPanel({ showToast }: { showToast: (s: string) => void }) {
-  const [sub, setSub] = useState<Sub>("testimonials");
+export default function SiteContentPanel({
+  showToast,
+  section,
+}: {
+  showToast: (s: string) => void;
+  section: SiteSection;
+}) {
   const [projectIds, setProjectIds] = useState<string[]>([]);
   const [testimonials, setTestimonials] = useState<unknown[]>([]);
   const [experience, setExperience] = useState<unknown[]>([]);
@@ -346,38 +351,15 @@ export default function SiteContentPanel({ showToast }: { showToast: (s: string)
 
   return (
     <section className="flex flex-col gap-4">
-      <nav className="flex flex-wrap gap-1 rounded-lg border border-border-subtle bg-surface-raised p-1">
-        {(
-          [
-            ["testimonials", "Testimonials"],
-            ["experience", "Experience"],
-            ["education", "Education"],
-          ] as const
-        ).map(([id, label]) => (
-          <button
-            key={id}
-            type="button"
-            onClick={() => setSub(id)}
-            className={`rounded-md px-3 py-2 text-sm font-medium transition-colors ${
-              sub === id
-                ? "bg-surface-overlay text-brand shadow-sm"
-                : "text-brand-dim hover:text-brand"
-            }`}
-          >
-            {label}
-          </button>
-        ))}
-      </nav>
-
       {err ? (
-        <p className="rounded-lg border border-red-900/40 bg-red-950/20 px-3 py-2 text-sm text-red-200">
+        <p className="rounded-lg border border-destructive/30 bg-destructive/10 px-3 py-2 text-sm text-destructive">
           {err}
         </p>
       ) : null}
 
       {loading ? (
-        <p className="text-sm text-brand-dim">Loading site.json…</p>
-      ) : sub === "testimonials" ? (
+        <p className="text-sm text-muted-foreground">Loading site.json…</p>
+      ) : section === "testimonials" ? (
         <>
           <div className="flex justify-end">
             <button
@@ -386,7 +368,7 @@ export default function SiteContentPanel({ showToast }: { showToast: (s: string)
                 setTNew(true);
                 setTModal(emptyTestimonial());
               }}
-              className="rounded-lg bg-brand px-4 py-2 text-sm font-medium text-surface hover:bg-accent-muted"
+              className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow hover:bg-primary/90"
             >
               New testimonial
             </button>
@@ -397,12 +379,12 @@ export default function SiteContentPanel({ showToast }: { showToast: (s: string)
               return (
                 <li
                   key={t.id}
-                  className="flex flex-col gap-2 rounded-xl border border-border-subtle bg-surface-raised px-4 py-3 sm:flex-row sm:items-start sm:justify-between"
+                  className="flex flex-col gap-2 rounded-xl border border-border bg-card px-4 py-3 sm:flex-row sm:items-start sm:justify-between"
                 >
                   <div className="min-w-0">
                     <p className="font-medium">{t.author.name || t.id}</p>
-                    <p className="mt-1 line-clamp-2 text-sm text-brand-dim">{t.quote}</p>
-                    <p className="mt-1 font-mono text-[11px] text-brand-dim">{t.date}</p>
+                    <p className="mt-1 line-clamp-2 text-sm text-muted-foreground">{t.quote}</p>
+                    <p className="mt-1 font-mono text-[11px] text-muted-foreground">{t.date}</p>
                   </div>
                   <div className="flex shrink-0 gap-2">
                     <button
@@ -411,7 +393,7 @@ export default function SiteContentPanel({ showToast }: { showToast: (s: string)
                         setTNew(false);
                         setTModal(t);
                       }}
-                      className="rounded-lg border border-border-subtle px-3 py-1.5 text-sm hover:bg-surface-overlay"
+                      className="rounded-lg border border-border px-3 py-1.5 text-sm hover:bg-accent"
                     >
                       Edit
                     </button>
@@ -424,7 +406,7 @@ export default function SiteContentPanel({ showToast }: { showToast: (s: string)
                           label: t.author.name || t.id,
                         })
                       }
-                      className="rounded-lg px-3 py-1.5 text-sm text-red-300 hover:bg-red-950/40"
+                      className="rounded-md px-3 py-1.5 text-sm text-destructive hover:bg-destructive/10"
                     >
                       Delete
                     </button>
@@ -434,7 +416,7 @@ export default function SiteContentPanel({ showToast }: { showToast: (s: string)
             })}
           </ul>
         </>
-      ) : sub === "experience" ? (
+      ) : section === "experience" ? (
         <>
           <div className="flex justify-end">
             <button
@@ -443,7 +425,7 @@ export default function SiteContentPanel({ showToast }: { showToast: (s: string)
                 setENew(true);
                 setEModal(emptyExperience());
               }}
-              className="rounded-lg bg-brand px-4 py-2 text-sm font-medium text-surface hover:bg-accent-muted"
+              className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow hover:bg-primary/90"
             >
               New experience
             </button>
@@ -454,13 +436,13 @@ export default function SiteContentPanel({ showToast }: { showToast: (s: string)
               return (
                 <li
                   key={ex.id}
-                  className="flex flex-col gap-2 rounded-xl border border-border-subtle bg-surface-raised px-4 py-3 sm:flex-row sm:items-start sm:justify-between"
+                  className="flex flex-col gap-2 rounded-xl border border-border bg-card px-4 py-3 sm:flex-row sm:items-start sm:justify-between"
                 >
                   <div className="min-w-0">
                     <p className="font-medium">
                       {ex.title} · {ex.company}
                     </p>
-                    <p className="text-sm text-brand-dim">{ex.duration}</p>
+                    <p className="text-sm text-muted-foreground">{ex.duration}</p>
                   </div>
                   <div className="flex shrink-0 gap-2">
                     <button
@@ -469,7 +451,7 @@ export default function SiteContentPanel({ showToast }: { showToast: (s: string)
                         setENew(false);
                         setEModal(ex);
                       }}
-                      className="rounded-lg border border-border-subtle px-3 py-1.5 text-sm hover:bg-surface-overlay"
+                      className="rounded-lg border border-border px-3 py-1.5 text-sm hover:bg-accent"
                     >
                       Edit
                     </button>
@@ -478,7 +460,7 @@ export default function SiteContentPanel({ showToast }: { showToast: (s: string)
                       onClick={() =>
                         setDel({ col: "experience", id: ex.id, label: ex.company })
                       }
-                      className="rounded-lg px-3 py-1.5 text-sm text-red-300 hover:bg-red-950/40"
+                      className="rounded-md px-3 py-1.5 text-sm text-destructive hover:bg-destructive/10"
                     >
                       Delete
                     </button>
@@ -497,7 +479,7 @@ export default function SiteContentPanel({ showToast }: { showToast: (s: string)
                 setEdNew(true);
                 setEdModal(emptyEducation());
               }}
-              className="rounded-lg bg-brand px-4 py-2 text-sm font-medium text-surface hover:bg-accent-muted"
+              className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow hover:bg-primary/90"
             >
               New education
             </button>
@@ -508,11 +490,11 @@ export default function SiteContentPanel({ showToast }: { showToast: (s: string)
               return (
                 <li
                   key={ed.id}
-                  className="flex flex-col gap-2 rounded-xl border border-border-subtle bg-surface-raised px-4 py-3 sm:flex-row sm:items-start sm:justify-between"
+                  className="flex flex-col gap-2 rounded-xl border border-border bg-card px-4 py-3 sm:flex-row sm:items-start sm:justify-between"
                 >
                   <div className="min-w-0">
                     <p className="font-medium">{ed.school}</p>
-                    <p className="text-sm text-brand-dim">
+                    <p className="text-sm text-muted-foreground">
                       {ed.degree} · {ed.field}
                     </p>
                   </div>
@@ -523,7 +505,7 @@ export default function SiteContentPanel({ showToast }: { showToast: (s: string)
                         setEdNew(false);
                         setEdModal(ed);
                       }}
-                      className="rounded-lg border border-border-subtle px-3 py-1.5 text-sm hover:bg-surface-overlay"
+                      className="rounded-lg border border-border px-3 py-1.5 text-sm hover:bg-accent"
                     >
                       Edit
                     </button>
@@ -532,7 +514,7 @@ export default function SiteContentPanel({ showToast }: { showToast: (s: string)
                       onClick={() =>
                         setDel({ col: "education", id: ed.id, label: ed.school })
                       }
-                      className="rounded-lg px-3 py-1.5 text-sm text-red-300 hover:bg-red-950/40"
+                      className="rounded-md px-3 py-1.5 text-sm text-destructive hover:bg-destructive/10"
                     >
                       Delete
                     </button>
@@ -633,7 +615,7 @@ function TestimonialModal({
           onChange={(id) => setT((x) => ({ ...x, id }))}
         />
         <label className="flex flex-col gap-1">
-          <span className="text-xs font-medium uppercase tracking-wider text-brand-dim">Quote</span>
+          <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">Quote</span>
           <textarea
             value={t.quote}
             onChange={(e) => setT((x) => ({ ...x, quote: e.target.value }))}
@@ -688,7 +670,7 @@ function TestimonialModal({
           onChange={(companyLogo) => setT((x) => ({ ...x, author: { ...x.author, companyLogo } }))}
         />
         <label className="flex flex-col gap-1">
-          <span className="text-xs font-medium uppercase tracking-wider text-brand-dim">
+          <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
             Related project
           </span>
           <select
@@ -721,11 +703,11 @@ function TestimonialModal({
           Featured
         </label>
       </div>
-      <div className="mt-4 flex justify-end gap-2 border-t border-border-subtle pt-4">
+      <div className="mt-4 flex justify-end gap-2 border-t border-border pt-4">
         <button
           type="button"
           onClick={onClose}
-          className="rounded-lg border border-border-subtle px-4 py-2 text-sm hover:bg-surface-overlay"
+          className="rounded-lg border border-border px-4 py-2 text-sm hover:bg-accent"
         >
           Cancel
         </button>
@@ -740,7 +722,7 @@ function TestimonialModal({
               setBusy(false);
             }
           }}
-          className="rounded-lg bg-brand px-4 py-2 text-sm font-medium text-surface hover:bg-accent-muted disabled:opacity-40"
+          className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow hover:bg-primary/90 disabled:opacity-40"
         >
           {busy ? "Saving…" : "Save"}
         </button>
@@ -838,7 +820,7 @@ function ExperienceModal({
           />
         </div>
         <label className="flex flex-col gap-1">
-          <span className="text-xs font-medium uppercase tracking-wider text-brand-dim">
+          <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
             Description
           </span>
           <textarea
@@ -849,7 +831,7 @@ function ExperienceModal({
           />
         </label>
         <label className="flex flex-col gap-1">
-          <span className="text-xs font-medium uppercase tracking-wider text-brand-dim">
+          <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
             Highlight bullets (one per line)
           </span>
           <textarea
@@ -877,7 +859,7 @@ function ExperienceModal({
           value={ex.logo}
           onChange={(logo) => setEx((x) => ({ ...x, logo }))}
         />
-        <p className="text-xs font-medium uppercase tracking-wider text-brand-dim">Links</p>
+        <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">Links</p>
         <div className="grid gap-2 sm:grid-cols-2">
           {(["companySite", "caseStudy", "projectDemo", "certificate"] as const).map((key) => (
             <FormField
@@ -897,11 +879,11 @@ function ExperienceModal({
           Featured
         </label>
       </div>
-      <div className="mt-4 flex justify-end gap-2 border-t border-border-subtle pt-4">
+      <div className="mt-4 flex justify-end gap-2 border-t border-border pt-4">
         <button
           type="button"
           onClick={onClose}
-          className="rounded-lg border border-border-subtle px-4 py-2 text-sm hover:bg-surface-overlay"
+          className="rounded-lg border border-border px-4 py-2 text-sm hover:bg-accent"
         >
           Cancel
         </button>
@@ -916,7 +898,7 @@ function ExperienceModal({
               setBusy(false);
             }
           }}
-          className="rounded-lg bg-brand px-4 py-2 text-sm font-medium text-surface hover:bg-accent-muted disabled:opacity-40"
+          className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow hover:bg-primary/90 disabled:opacity-40"
         >
           {busy ? "Saving…" : "Save"}
         </button>
@@ -999,7 +981,7 @@ function EducationModal({
           />
         </div>
         <label className="flex flex-col gap-1">
-          <span className="text-xs font-medium uppercase tracking-wider text-brand-dim">
+          <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
             Description
           </span>
           <textarea
@@ -1010,7 +992,7 @@ function EducationModal({
           />
         </label>
         <label className="flex flex-col gap-1">
-          <span className="text-xs font-medium uppercase tracking-wider text-brand-dim">
+          <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
             Highlight bullets (one per line)
           </span>
           <textarea
@@ -1051,11 +1033,11 @@ function EducationModal({
           onChange={(v) => setEd((x) => ({ ...x, links: { ...x.links, schoolSite: v } }))}
         />
       </div>
-      <div className="mt-4 flex justify-end gap-2 border-t border-border-subtle pt-4">
+      <div className="mt-4 flex justify-end gap-2 border-t border-border pt-4">
         <button
           type="button"
           onClick={onClose}
-          className="rounded-lg border border-border-subtle px-4 py-2 text-sm hover:bg-surface-overlay"
+          className="rounded-lg border border-border px-4 py-2 text-sm hover:bg-accent"
         >
           Cancel
         </button>
@@ -1070,7 +1052,7 @@ function EducationModal({
               setBusy(false);
             }
           }}
-          className="rounded-lg bg-brand px-4 py-2 text-sm font-medium text-surface hover:bg-accent-muted disabled:opacity-40"
+          className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow hover:bg-primary/90 disabled:opacity-40"
         >
           {busy ? "Saving…" : "Save"}
         </button>
