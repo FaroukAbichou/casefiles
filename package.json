@@ -6,6 +6,12 @@
     "dev": "npm run dev --prefix dashboard",
     "build": "npm run build --prefix dashboard",
     "preview": "npm run preview --prefix dashboard",
-    "install:dashboard": "npm install --prefix dashboard"
+    "install:dashboard": "npm install --prefix dashboard",
+    "sync:watch": "bash scripts/watch-and-push.sh",
+    "cloudinary:upload": "node scripts/cloudinary-upload.mjs"
+  },
+  "devDependencies": {
+    "cloudinary": "^2.5.1",
+    "dotenv": "^16.4.7"
   }
 }

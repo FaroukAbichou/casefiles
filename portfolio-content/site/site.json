@@ -58,7 +58,7 @@
       "id": "kotteb",
       "title": "Kotteb",
       "description": "A Quran-focused app that connects users with qualified therapists while offering seamless Quran reading and prayer tools.",
-      "image": "case-studies/kotteb/assets/kotteb.png",
+      "image": "case-studies/kotteb/assets/Screenshot-2026-02-13-at-2.52.00---PM-1775050641988.png",
       "link": "/projects/kotteb",
       "homeCanvasPriority": 2
     },
@@ -85,21 +85,6 @@
       "image": "case-studies/blinkdo/assets/image.webp",
       "link": "/projects/blinkdo",
       "homeCanvasPriority": 5
-    },
-    {
-      "id": "ecoquest",
-      "title": "EcoQuest",
-      "description": "Track environmental impact and discover sustainable alternatives for daily choices.",
-      "image": "case-studies/ecoquest/assets/ecoquest.png",
-      "link": "/projects/ecoquest",
-      "homeCanvasPriority": 6
-    },
-    {
-      "id": "financeflow",
-      "title": "FinanceFlow",
-      "description": "Track expenses, set budgets, and hit your financial goals with clarity.",
-      "image": "case-studies/financeflow/assets/financeflow.png",
-      "link": "/projects/financeflow"
     },
     {
       "id": "subread",

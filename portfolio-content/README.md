@@ -20,8 +20,9 @@ Single source of truth for portfolio **site copy**, **case studies**, **writing 
 ## After you edit content
 
 1. Commit and push this repo (`casefiles`).
-2. Sync the Next app fallback (used if GitHub is slow or 404): copy `site/site.json` → `farouk.work/app/home/data/site.fallback.json`.
-3. After adding or renaming `tools[].icon` entries, run `npm run sync-tool-icons` in `farouk.work` (writes into this repo’s `media/tools/`).
+2. If you use **Cloudinary** for delivery, run `npm run cloudinary:upload` from the repo root (after configuring `.env.cloudinary`). See `integrations/CLOUDINARY.md`.
+3. Sync the Next app fallback (used if remote JSON is slow or 404): copy `site/site.json` → `farouk.work/app/home/data/site.fallback.json`.
+4. After adding or renaming `tools[].icon` entries, run `npm run sync-tool-icons` in `farouk.work` (writes into this repo’s `media/tools/`).
 
 ## URL rules in JSON
 
@@ -29,15 +30,17 @@ Single source of truth for portfolio **site copy**, **case studies**, **writing 
 - In-repo assets: paths starting with `media/` (site-wide) or `case-studies/{slug}/assets/` (per project).
 - External URLs (Unsplash, Clearbit, etc.) stay full `https://...` strings.
 
-The Next app prepends the GitHub raw base for every `media/...` and `case-studies/...` value (see `DEFAULT_PORTFOLIO_CONTENT_BASE` in the frontend).
+### Serving assets: GitHub raw (legacy) or Cloudinary
 
-## GitHub raw base
+**GitHub raw:** the Next app can prepend a base URL for every relative `media/...` and `case-studies/...` path:
 
 ```text
 https://raw.githubusercontent.com/FaroukAbichou/casefiles/main/portfolio-content
 ```
 
 Override with `PORTFOLIO_CONTENT_BASE_URL` / `NEXT_PUBLIC_PORTFOLIO_CONTENT_BASE_URL` if the repo or branch differs.
+
+**Cloudinary (recommended CDN):** use `integrations/resolve-portfolio-asset-url.ts` in the Next app and upload this folder with `npm run cloudinary:upload`. Full steps: **`integrations/CLOUDINARY.md`**.
 
 ## Adding a case study
 

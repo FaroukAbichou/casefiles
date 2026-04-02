@@ -1,0 +1,40 @@
+name: Cloudinary upload
+
+on:
+  push:
+    branches: [main]
+
+concurrency:
+  group: cloudinary-upload
+  cancel-in-progress: false
+
+jobs:
+  cloudinary-upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Write Cloudinary env file
+        run: |
+          cat > .env.cloudinary <<'EOF'
+          CLOUDINARY_CLOUD_NAME=${{ secrets.CLOUDINARY_CLOUD_NAME }}
+          CLOUDINARY_API_KEY=${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET=${{ secrets.CLOUDINARY_API_SECRET }}
+          CLOUDINARY_FOLDER_PREFIX=portfolio-content
+          EOF
+          echo ".env.cloudinary created (secrets masked)."
+
+      - name: Upload portfolio-content to Cloudinary
+        run: npm run cloudinary:upload
+
