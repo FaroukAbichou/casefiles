@@ -89,9 +89,16 @@
     {
       "id": "subread",
       "title": "Subread",
-      "description": "A unified reading platform for newsletters and subscriptions.",
+      "description": "A unified reading platform for newsletters and subscriptions—built for faster discovery, better saves, and focused sessions.",
       "image": "case-studies/subread/assets/subread.png",
       "link": "/projects/subread"
+    },
+    {
+      "id": "testcase",
+      "title": "test case",
+      "description": "Farouk.work",
+      "image": "case-studies/testcase/assets/Screenshot-2026-02-13-at-2.51.14---PM-1775127418984.png",
+      "link": "/projects/testcase"
     }
   ],
   "experience": [
@@ -232,6 +239,23 @@
       },
       "relatedProjectId": "portfolio-redesign-2025",
       "date": "May 2025",
+      "verified": true,
+      "featured": true
+    },
+    {
+      "id": "client-1775126911803",
+      "quote": "damn this guy is too good",
+      "author": {
+        "name": "me lol",
+        "title": "last name ",
+        "company": "company ",
+        "avatar": "media/site/testimonials/Screenshot-2026-03-07-at-12.31.08---AM-1775126954972.png",
+        "linkedin": "https://www.linkedin.com/in/faroukabichou/",
+        "companyUrl": "https://www.farouk.work/",
+        "companyLogo": "media/site/testimonials/Screenshot-2026-03-07-at-12.33.07---AM-1775127013012.png"
+      },
+      "relatedProjectId": "takikids",
+      "date": "2309",
       "verified": true,
       "featured": true
     }

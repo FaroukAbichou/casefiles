@@ -35,6 +35,64 @@ const IMAGE_EXT = new Set([
   ".ico",
 ]);
 
+function readHeadBytes(fullPath, n) {
+  const fd = fs.openSync(fullPath, "r");
+  try {
+    const buf = Buffer.alloc(n);
+    fs.readSync(fd, buf, 0, n, 0);
+    return buf;
+  } finally {
+    fs.closeSync(fd);
+  }
+}
+
+function isValidImageSignature(ext, fullPath) {
+  // Avoid uploading placeholders that have a .png extension but aren't real images.
+  // We only validate a few common formats used in this repo.
+  const e = ext.toLowerCase();
+  try {
+    if (e === ".png") {
+      const b = readHeadBytes(fullPath, 8);
+      // 89 50 4E 47 0D 0A 1A 0A
+      return (
+        b[0] === 0x89 &&
+        b[1] === 0x50 &&
+        b[2] === 0x4e &&
+        b[3] === 0x47 &&
+        b[4] === 0x0d &&
+        b[5] === 0x0a &&
+        b[6] === 0x1a &&
+        b[7] === 0x0a
+      );
+    }
+    if (e === ".jpg" || e === ".jpeg") {
+      const b = readHeadBytes(fullPath, 2);
+      // FF D8
+      return b[0] === 0xff && b[1] === 0xd8;
+    }
+    if (e === ".webp") {
+      const b = readHeadBytes(fullPath, 12);
+      // RIFF....WEBP
+      const riff = b.slice(0, 4).toString("ascii") === "RIFF";
+      const webp = b.slice(8, 12).toString("ascii") === "WEBP";
+      return riff && webp;
+    }
+    if (e === ".gif") {
+      const b = readHeadBytes(fullPath, 6);
+      const head = b.toString("ascii");
+      return head.startsWith("GIF");
+    }
+    if (e === ".svg") {
+      const b = readHeadBytes(fullPath, 250);
+      const s = b.toString("utf8").trimStart();
+      return s.startsWith("<svg") || s.includes("<svg");
+    }
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 function walkFiles(dir, out = []) {
   if (!fs.existsSync(dir)) {
     throw new Error(`Missing folder: ${dir}`);
@@ -72,6 +130,7 @@ async function main() {
 
   let ok = 0;
   let fail = 0;
+  let skipped = 0;
 
   for (const full of files) {
     const rel = path.relative(PORTFOLIO, full).split(path.sep).join("/");
@@ -82,6 +141,12 @@ async function main() {
       resource_type === "image"
         ? `${PREFIX}/${relPosix.replace(/\.[^./]+$/, "")}`
         : `${PREFIX}/${relPosix}`;
+
+    if (resource_type === "image" && !isValidImageSignature(ext, full)) {
+      console.warn(`⚠ skip invalid image file (${ext})`, rel);
+      skipped++;
+      continue;
+    }
 
     try {
       const res = await cloudinary.uploader.upload(full, {
@@ -100,7 +165,7 @@ async function main() {
     }
   }
 
-  console.log(`\nDone. ${ok} ok, ${fail} failed.`);
+  console.log(`\nDone. ${ok} ok, ${skipped} skipped, ${fail} failed.`);
   if (fail) process.exit(1);
 }
 

@@ -16,6 +16,9 @@ const titles: Record<string, string> = {
   "/site/testimonials": "Site · Testimonials",
   "/site/experience": "Site · Experience",
   "/site/education": "Site · Education",
+  "/cloudinary/browser": "Cloudinary · Browser",
+  "/tools/layout": "Tools · Layout helper",
+  "/settings/general": "Settings · General",
 };
 
 export function DashboardLayout() {
